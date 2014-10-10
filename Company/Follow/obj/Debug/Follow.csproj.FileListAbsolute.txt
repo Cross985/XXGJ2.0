@@ -1,0 +1,10 @@
+D:\sage\欣兴工具\Company\Follow\bin\Debug\Follow.dll
+D:\sage\欣兴工具\Company\Follow\bin\Debug\Follow.pdb
+D:\sage\欣兴工具\DLL\Follow.dll
+D:\sage\欣兴工具\DLL\Follow.pdb
+D:\sage\欣兴工具\Company\Follow\obj\Debug\Follow.dll
+D:\sage\欣兴工具\Company\Follow\obj\Debug\Follow.pdb
+E:\sage\欣兴工具\XXGJ-master\DLL\Follow.dll
+E:\sage\欣兴工具\XXGJ-master\DLL\Follow.pdb
+E:\sage\欣兴工具\XXGJ-master\Company\Follow\obj\Debug\Follow.dll
+E:\sage\欣兴工具\XXGJ-master\Company\Follow\obj\Debug\Follow.pdb

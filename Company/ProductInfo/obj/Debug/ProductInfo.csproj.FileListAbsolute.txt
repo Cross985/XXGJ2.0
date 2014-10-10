@@ -1,0 +1,4 @@
+E:\sage\欣兴工具\XXGJ-master\DLL\ProductInfo.dll
+E:\sage\欣兴工具\XXGJ-master\DLL\ProductInfo.pdb
+E:\sage\欣兴工具\XXGJ-master\Company\ProductInfo\obj\Debug\ProductInfo.dll
+E:\sage\欣兴工具\XXGJ-master\Company\ProductInfo\obj\Debug\ProductInfo.pdb

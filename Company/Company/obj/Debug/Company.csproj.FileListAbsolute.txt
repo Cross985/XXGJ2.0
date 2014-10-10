@@ -1,0 +1,10 @@
+D:\sage\欣兴工具\Company\Company\bin\Debug\Company.dll
+D:\sage\欣兴工具\Company\Company\bin\Debug\Company.pdb
+D:\sage\欣兴工具\DLL\Company.dll
+D:\sage\欣兴工具\DLL\Company.pdb
+D:\sage\欣兴工具\Company\Company\obj\Debug\Company.dll
+D:\sage\欣兴工具\Company\Company\obj\Debug\Company.pdb
+E:\sage\欣兴工具\XXGJ-master\DLL\Company.dll
+E:\sage\欣兴工具\XXGJ-master\DLL\Company.pdb
+E:\sage\欣兴工具\XXGJ-master\Company\Company\obj\Debug\Company.dll
+E:\sage\欣兴工具\XXGJ-master\Company\Company\obj\Debug\Company.pdb
