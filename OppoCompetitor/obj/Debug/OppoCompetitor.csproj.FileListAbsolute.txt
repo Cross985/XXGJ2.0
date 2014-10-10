@@ -1,0 +1,11 @@
+E:\孙敏\Sage CRM\欣兴工具\Project\XXGJ\OppoCompetitor\bin\Debug\OppoCompetitor.dll
+E:\孙敏\Sage CRM\欣兴工具\Project\XXGJ\OppoCompetitor\bin\Debug\OppoCompetitor.pdb
+E:\孙敏\Sage CRM\欣兴工具\Project\XXGJ\OppoCompetitor\obj\Debug\ResolveAssemblyReference.cache
+E:\孙敏\Sage CRM\欣兴工具\Project\XXGJ\OppoCompetitor\obj\Debug\OppoCompetitor.dll
+E:\孙敏\Sage CRM\欣兴工具\Project\XXGJ\OppoCompetitor\obj\Debug\OppoCompetitor.pdb
+E:\孙敏\Sage CRM\欣兴工具\Project\XXGJ\ExportDLL\OppoCompetitor.dll
+E:\孙敏\Sage CRM\欣兴工具\Project\XXGJ\ExportDLL\OppoCompetitor.pdb
+E:\sage\欣兴工具\XXGJ-master\ExportDLL\OppoCompetitor.dll
+E:\sage\欣兴工具\XXGJ-master\ExportDLL\OppoCompetitor.pdb
+E:\sage\欣兴工具\XXGJ-master\OppoCompetitor\obj\Debug\OppoCompetitor.dll
+E:\sage\欣兴工具\XXGJ-master\OppoCompetitor\obj\Debug\OppoCompetitor.pdb

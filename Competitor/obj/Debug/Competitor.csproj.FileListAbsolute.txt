@@ -1,0 +1,11 @@
+E:\孙敏\Sage CRM\欣兴工具\Project\XXGJ\Competitor\bin\Debug\Competitor.dll
+E:\孙敏\Sage CRM\欣兴工具\Project\XXGJ\Competitor\bin\Debug\Competitor.pdb
+E:\孙敏\Sage CRM\欣兴工具\Project\XXGJ\Competitor\obj\Debug\ResolveAssemblyReference.cache
+E:\孙敏\Sage CRM\欣兴工具\Project\XXGJ\Competitor\obj\Debug\Competitor.dll
+E:\孙敏\Sage CRM\欣兴工具\Project\XXGJ\Competitor\obj\Debug\Competitor.pdb
+E:\孙敏\Sage CRM\欣兴工具\Project\XXGJ\ExportDLL\Competitor.dll
+E:\孙敏\Sage CRM\欣兴工具\Project\XXGJ\ExportDLL\Competitor.pdb
+E:\sage\欣兴工具\XXGJ-master\ExportDLL\Competitor.dll
+E:\sage\欣兴工具\XXGJ-master\ExportDLL\Competitor.pdb
+E:\sage\欣兴工具\XXGJ-master\Competitor\obj\Debug\Competitor.dll
+E:\sage\欣兴工具\XXGJ-master\Competitor\obj\Debug\Competitor.pdb
