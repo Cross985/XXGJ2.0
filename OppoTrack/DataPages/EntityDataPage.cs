@@ -36,8 +36,15 @@ namespace OppoTrack.DataPages {
                 AddContent(vpMainPanel);
                 AddUrlButton("Edit", "Edit.gif", UrlDotNet(ThisDotNetDll, "RunDataPageEdit") + "&optr_OppoTrackId=" + optr_OppoTrackId);
                 AddUrlButton("Delete", "Delete.gif", UrlDotNet(ThisDotNetDll, "RunDataPageDelete") + "&optr_OppoTrackId=" + optr_OppoTrackId);
-                AddUrlButton("Continue", "Continue.gif", UrlDotNet(ThisDotNetDll, "RunListPage") + "&J=OppoTrack&T=Opportunity");
-            } catch (Exception error) {
+                string url = string.Empty;
+                string optr_opportunityid = Dispatch.EitherField("key7");
+                if (string.IsNullOrEmpty(optr_opportunityid))
+                    url = UrlDotNet("SalesMenu", "RunOppoTrack") + "&J=OppoTrack&T=SalesManagement";
+                else
+                    url = UrlDotNet(ThisDotNetDll, "RunListPage") + "&J=OppoTrack&T=Opportunity";
+                AddUrlButton("Cancel", "cancel.gif", url);
+            }
+            catch (Exception error) {
                 this.AddError(error.Message);
             }
         }

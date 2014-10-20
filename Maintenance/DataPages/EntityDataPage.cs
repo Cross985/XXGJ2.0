@@ -53,7 +53,7 @@ namespace Maintenance.DataPages {
                 AddUrlButton("Delete", "Delete.gif", UrlDotNet(ThisDotNetDll, "RunDataPageDelete") + "&mate_MaintenanceId=" + mate_MaintenanceId);
                 AddUrlButton("Add MainteDetail", "new.gif", UrlDotNet(ThisDotNetDll, "RunMainteDetailAdd") + "&mate_MaintenanceId=" + mate_MaintenanceId);
                 AddUrlButton("Add BadType", "new.gif", UrlDotNet(ThisDotNetDll, "RunBadTypeAdd") + "&mate_MaintenanceId=" + mate_MaintenanceId);
-                AddUrlButton("Continue", "Continue.gif", UrlDotNet(ThisDotNetDll, "RunListPage"));
+                AddUrlButton("Continue", "Continue.gif", UrlDotNet("ServiceMenu", "RunMaintenance") + "&J=Maintenance");
             } catch (Exception error) {
                 this.AddError(error.Message);
             }

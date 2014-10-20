@@ -8,5 +8,6 @@ namespace Maintenance.DataPages {
         public MaintenanceDataPageDelete()
             : base("Maintenance", "mate_MaintenanceId", "MaintenanceDetailBox") {
         }
+        
     }
 }

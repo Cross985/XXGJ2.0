@@ -61,7 +61,7 @@ namespace MarActPlan.DataPages {
                 AddUrlButton("Add Person", "new.gif", UrlDotNet(ThisDotNetDll, "RunPersonAdd") + "&mapl_MarActPlanId=" + mapl_MarActPlanId);
                 AddUrlButton("Add DisplayContent", "new.gif", UrlDotNet(ThisDotNetDll, "RunDisplayContentAdd") + "&mapl_MarActPlanId=" + mapl_MarActPlanId);
                 AddUrlButton("Add ActualCost", "new.gif", UrlDotNet(ThisDotNetDll, "RunActualCostAdd") + "&mapl_MarActPlanId=" + mapl_MarActPlanId);
-                AddUrlButton("Continue", "Continue.gif", UrlDotNet(ThisDotNetDll, "RunListPage"));
+                AddUrlButton("Continue", "Continue.gif", UrlDotNet(ThisDotNetDll, "RunListPage") + "&J=MarActPlan&T=MarketingManagement");
             } catch (Exception error) {
                 this.AddError(error.Message);
             }

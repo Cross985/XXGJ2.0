@@ -10,7 +10,7 @@ namespace Company.DataPages
     {
         public override void  GetTabs()
         {
-            string strTopContent = "<TABLE WIDTH=100%><TR><TD CLASS=TOPHEADING WIDTH=60><IMG SRC='" + CurrentUser.VirtualImgPath() + "Icons/Company.png' BORDER=0 ALIGN=MIDDLE></td><td CLASS=VIEWBOXCAPTION><font color='black'>客户列表</font></td></tr></table>";
+            string strTopContent = "<TABLE WIDTH=100%><TR><TD CLASS=TOPHEADING WIDTH=60><IMG SRC='" + CurrentUser.VirtualImgPath() + "Icons/Competitor.gif' BORDER=0 ALIGN=MIDDLE></td><td CLASS=VIEWBOXCAPTION><SPAN CLASS=TOPCAPTION>客户列表</SPAN></td></tr></table>";
             AddTopContent(strTopContent);
 
             this.UseEntityTabs = false;
@@ -52,7 +52,7 @@ namespace Company.DataPages
         {
             try
             {
-                
+                //AddInfo("123");
                 base.BuildContents();
             }
             catch (Exception error)
@@ -63,7 +63,9 @@ namespace Company.DataPages
         public override void AddNewButton()
         {
             //base.AddNewButton();
-            AddUrlButton("New","New.gif",UrlDotNet(ThisDotNetDll,"RunDataPageNew"));
+            AddUrlButton("New","New.gif",Url("140"));
         }
+
+        
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Sage.CRM.WebObject;
 using Sage.CRM.Controls;
+using Sage.CRM.Data;
 
 namespace Follow.DataPages
 {
@@ -46,12 +47,15 @@ namespace Follow.DataPages
             //if (string.IsNullOrEmpty(compid))
             //    compid = Dispatch.EitherField("key1");
             //comp.DefaultValue = compid;
-            //Record FollRec = base.FindCurrentRecord("Follow");
+            Record FollRec = base.FindCurrentRecord("Follow");
             //FollRec.SetField("foll_companyid",compid);
             //FollRec.SaveChanges();
             //base.AfterSave(screen);
-            if (string.IsNullOrEmpty(compid))
+            string foll_createoppo = FollRec.GetFieldAsString("foll_createoppo");
+            if (string.IsNullOrEmpty(compid) && foll_createoppo.ToLower() != "y")
                 Dispatch.Redirect(UrlDotNet("Company", "RunFollowMenuList") + "&J=Follow&T=CompanyMangement");
+            else if (foll_createoppo.ToLower() == "y")
+                Dispatch.Redirect(Url("1190"));            
             else
                 Dispatch.Redirect(UrlDotNet("Company", "RunFollowList") + "&comp_companyid=" + compid + "&J=Follow&T=Company");
         }

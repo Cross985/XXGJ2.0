@@ -14,6 +14,7 @@ namespace ProductInfo.DataPages
             
             this.EditButton = false;
             this.ContinueButton = false;
+            this.UseTabs = false;
         }
 
         public override void BuildContents()

@@ -1,55 +1,128 @@
+	客户管理
+	<script>
+	function Select(urlname){
+	  var strurl=urlname;
+	if(urlname.toString().search('dotnetfunc=RunListPage')!=-1){        
+			strurl=urlname+ "&&J=CompanyList";
+		   }
+		   //
+		   
+if(urlname.toString().search('dotnetfunc=RunOpportunity')!=-1){        
+        strurl=urlname+ "&J=Opportunity";
+       }
+  if(urlname.toString().search('dotnetfunc=RunOppoTrack')!=-1){        
+        strurl=urlname+ "&J=OppoTrack";
+       }
+if(urlname.toString().search('dotnetfunc=RunQuotation')!=-1){        
+        strurl=urlname+ "&J=Quotation";
+       }
+	   if(urlname.toString().search('dotnetfunc=RunOppoCompetitor')!=-1){        
+        strurl=urlname+ "&J=Competitor";
+       }
+		   //
+		   if(urlname.toString().search('dotnetfunc=RunDecorateComp')!=-1){        
+        strurl=urlname+ "&J=DecorateComp";
+       }
+  if(urlname.toString().search('dotnetfunc=RunMarActPool')!=-1){        
+        strurl=urlname+ "&J=MarActPool";
+       }
+if(urlname.toString().search('dotnetfunc=RunMarActPlan')!=-1){        
+        strurl=urlname+ "&J=MarActPlan";
+       }
+	   if(urlname.toString().search('dotnetdll=ProdCategory')!=-1){        
+        strurl=urlname+ "&J=ProdCategoryList";
+       }
+	   if(urlname.toString().search('dotnetfunc=RunEquipment')!=-1){        
+        strurl=urlname+ "&J=Equipment";
+       }
+	   
+	if (parent.EWARE_MID) 
+		 {  parent.EWARE_MID.location=strurl; }
+	}
+	</script>
+
+
 <script>
 function Select(urlname){
   var strurl=urlname;
-if(urlname.toString().search('dotnetfunc=RunCompetitor')!=-1){        
-        strurl=urlname+ "&J=Competitor";
+if(urlname.toString().search('dotnetfunc=RunDecorateComp')!=-1){        
+        strurl=urlname+ "&J=DecorateComp";
        }
-  if(urlname.toString().search('dotnetfunc=RunFollowMenuList')!=-1){        
-        strurl=urlname+ "&J=Follow";
+  if(urlname.toString().search('dotnetfunc=RunMarActPool')!=-1){        
+        strurl=urlname+ "&J=MarActPool";
        }
-if(urlname.toString().search('dotnetfunc=RunListPage')!=-1){        
-        strurl=urlname+ "&J=CompanyList";
+if(urlname.toString().search('dotnetfunc=RunMarActPlan')!=-1){        
+        strurl=urlname+ "&J=MarActPlan";
+       }
+	   if(urlname.toString().search('dotnetfunc=RunCompeMarAct')!=-1){        
+        strurl=urlname+ "&J=CompeMarAct";
+       }
+	   if(urlname.toString().search('dotnetfunc=RunMarketInfo')!=-1){        
+        strurl=urlname+ "&J=MarketInfo";
        }
 if (parent.EWARE_MID) 
      {  parent.EWARE_MID.location=strurl; }
 }
 </script>
-
-<script> 
+	
+	<script>
 function Select(urlname){
   var strurl=urlname;
-   if (urlname.toString().toLowerCase().search('dotnetdll=IntelligenceMenu')!=-1) {
-        if(urlname.toString().toLowerCase().search('dotnetfunc=RunCompetitor')!=-1){        
-        strurl=urlname+"&&J=Competitor";
-      
+if(urlname.toString().search('dotnetfunc=RunOpportunity')!=-1){        
+        strurl=urlname+ "&J=Opportunity";
        }
-    }
-   if (urlname.toString().toLowerCase().search('dotnetdll=SalesMenu')!=-1) {
-        if(urlname.toString().toLowerCase().search('dotnetfunc=runopportunity')!=-1){        
-        strurl=urlname+"&&J=Opportunity";
+  if(urlname.toString().search('dotnetfunc=RunOppoTrack')!=-1){        
+        strurl=urlname+ "&J=OppoTrack";
        }
-     }    
-   if (urlname.toString().toLowerCase().search('dotnetdll=ContractMenu')!=-1) {
-        if(urlname.toString().toLowerCase().search('dotnetfunc=RunProdCategory')!=-1){        
-        strurl=urlname+"&&J=ProdCategory";
+if(urlname.toString().search('dotnetfunc=RunQuotation')!=-1){        
+        strurl=urlname+ "&J=Quotation";
        }
-     }
-   if (urlname.toString().toLowerCase().search('dotnetdll=MarketingMenu')!=-1) {
-        if(urlname.toString().toLowerCase().search('dotnetfunc=RunDecorateComp')!=-1){        
-        strurl=urlname+"&&J=DecorateComp";
+	   if(urlname.toString().search('dotnetfunc=RunOppoCompetitor')!=-1){        
+        strurl=urlname+ "&J=Competitor";
        }
-     }  
-  if (urlname.toString().toLowerCase().search('dotnetdll=ServiceMenu')!=-1) {
-        if(urlname.toString().toLowerCase().search('dotnetfunc=RunEquipment')!=-1){        
-        strurl=urlname+"&&J=Equipment";
+	   if(urlname.toString().search('dotnetfunc=RunListPage')!=-1){        
+        strurl=urlname+ "&J=Contract";
        }
-     }
-   if (urlname.toString().toLowerCase().search('dotnetdll=WorkMenu')!=-1) {
-        if(urlname.toString().search('dotnetfunc=RunCompetitor')!=-1){        
-        strurl=urlname++ "&J=Competitor";
-       }
-     }           
-    if (parent.EWARE_MID) 
-     {  parent.EWARE_MID.location=strurl  ; }
+if (parent.EWARE_MID) 
+     {  parent.EWARE_MID.location=strurl; }
 }
 </script>
+	<script> 
+	function Select(urlname){
+	  var strurl=urlname;
+	  
+	   if (urlname.toString().toLowerCase().search('dotnetdll=IntelligenceMenu')!=-1) {
+			if(urlname.toString().toLowerCase().search('dotnetfunc=RunCompetitor')!=-1){        
+			strurl=urlname+"&&J=Competitor";
+		  
+		   }
+		}
+	   if (urlname.toString().toLowerCase().search('dotnetdll=SalesMenu')!=-1) {
+			if(urlname.toString().toLowerCase().search('dotnetfunc=runopportunity')!=-1){        
+			strurl=urlname+"&&J=Opportunity";
+		   }
+		 }    
+	   if (urlname.toString().toLowerCase().search('dotnetdll=ContractMenu')!=-1) {
+			if(urlname.toString().toLowerCase().search('dotnetfunc=RunProdCategory')!=-1){        
+			strurl=urlname+"&&J=ProdCategory";
+		   }
+		 }
+	   if (urlname.toString().toLowerCase().search('dotnetdll=MarketingMenu')!=-1) {
+			if(urlname.toString().toLowerCase().search('dotnetfunc=RunDecorateComp')!=-1){        
+			strurl=urlname+"&&J=DecorateComp";
+		   }
+		 }  
+	  if (urlname.toString().toLowerCase().search('dotnetdll=ServiceMenu')!=-1) {
+			if(urlname.toString().toLowerCase().search('dotnetfunc=RunEquipment')!=-1){        
+			strurl=urlname+"&&J=Equipment";
+		   }
+		 }
+	   if (urlname.toString().toLowerCase().search('dotnetdll=WorkMenu')!=-1) {
+			if(urlname.toString().search('dotnetfunc=RunCompetitor')!=-1){        
+			strurl=urlname++ "&J=Competitor";
+		   }
+		 }           
+		if (parent.EWARE_MID) 
+		 {  parent.EWARE_MID.location=strurl  ; }
+	}
+	</script>

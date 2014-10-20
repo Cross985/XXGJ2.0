@@ -9,3 +9,7 @@ E:\sage\欣兴工具\XXGJ-master\ExportDLL\Competitor.dll
 E:\sage\欣兴工具\XXGJ-master\ExportDLL\Competitor.pdb
 E:\sage\欣兴工具\XXGJ-master\Competitor\obj\Debug\Competitor.dll
 E:\sage\欣兴工具\XXGJ-master\Competitor\obj\Debug\Competitor.pdb
+D:\sage\欣兴工具\XXGJ2.0\ExportDLL\Competitor.dll
+D:\sage\欣兴工具\XXGJ2.0\ExportDLL\Competitor.pdb
+D:\sage\欣兴工具\XXGJ2.0\Competitor\obj\Debug\Competitor.dll
+D:\sage\欣兴工具\XXGJ2.0\Competitor\obj\Debug\Competitor.pdb

@@ -11,3 +11,9 @@ D:\sage\欣兴工具\Project\XXGJ\SalesMenu\obj\Debug\SalesMenu.Properties.Resou
 D:\sage\欣兴工具\Project\XXGJ\SalesMenu\obj\Debug\SalesMenu.csproj.GenerateResource.Cache
 D:\sage\欣兴工具\Project\XXGJ\SalesMenu\obj\Debug\SalesMenu.dll
 D:\sage\欣兴工具\Project\XXGJ\SalesMenu\obj\Debug\SalesMenu.pdb
+D:\sage\欣兴工具\XXGJ2.0\ExportDLL\SalesMenu.dll
+D:\sage\欣兴工具\XXGJ2.0\ExportDLL\SalesMenu.pdb
+D:\sage\欣兴工具\XXGJ2.0\SalesMenu\obj\Debug\SalesMenu.Properties.Resources.resources
+D:\sage\欣兴工具\XXGJ2.0\SalesMenu\obj\Debug\SalesMenu.csproj.GenerateResource.Cache
+D:\sage\欣兴工具\XXGJ2.0\SalesMenu\obj\Debug\SalesMenu.dll
+D:\sage\欣兴工具\XXGJ2.0\SalesMenu\obj\Debug\SalesMenu.pdb

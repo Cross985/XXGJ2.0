@@ -9,3 +9,7 @@ E:\sage\欣兴工具\XXGJ-master\ExportDLL\OppoCompetitor.dll
 E:\sage\欣兴工具\XXGJ-master\ExportDLL\OppoCompetitor.pdb
 E:\sage\欣兴工具\XXGJ-master\OppoCompetitor\obj\Debug\OppoCompetitor.dll
 E:\sage\欣兴工具\XXGJ-master\OppoCompetitor\obj\Debug\OppoCompetitor.pdb
+D:\sage\欣兴工具\XXGJ2.0\ExportDLL\OppoCompetitor.dll
+D:\sage\欣兴工具\XXGJ2.0\ExportDLL\OppoCompetitor.pdb
+D:\sage\欣兴工具\XXGJ2.0\OppoCompetitor\obj\Debug\OppoCompetitor.dll
+D:\sage\欣兴工具\XXGJ2.0\OppoCompetitor\obj\Debug\OppoCompetitor.pdb

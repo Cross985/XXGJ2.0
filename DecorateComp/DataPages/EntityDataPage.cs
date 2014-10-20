@@ -43,7 +43,7 @@ namespace DecorateComp.DataPages {
                 AddUrlButton("Edit", "Edit.gif", UrlDotNet(ThisDotNetDll, "RunDataPageEdit") + "&dcom_decoratecompId=" + dcom_DecorateCompId);
                 AddUrlButton("Delete", "Delete.gif", UrlDotNet(ThisDotNetDll, "RunDataPageDelete") + "&dcom_decoratecompId=" + dcom_DecorateCompId);
                 AddUrlButton("Add Person", "new.gif", UrlDotNet(ThisDotNetDll, "RunPersonAdd") + "&dcom_decoratecompId=" + dcom_DecorateCompId);
-                AddUrlButton("Continue", "Continue.gif", UrlDotNet(ThisDotNetDll, "RunListPage"));
+                AddUrlButton("Continue", "Continue.gif", UrlDotNet("MarketingMenu", "RunDecorateComp") + "&J=RunDecorateComp&T=MarketingManagement");
             } catch (Exception error) {
                 this.AddError(error.Message);
             }

@@ -34,6 +34,14 @@ namespace Quotation.DataPages
                     {
                         qutaEntry.Fill(qutaRec);
                         qutacompEntry.Fill(qutaRec);
+                        string quta_opportunityid = qutaRec.GetFieldAsString("quta_opportunityid");
+                        string quta_updateoppo = qutaRec.GetFieldAsString("quta_updateoppo");
+                        if (quta_updateoppo.ToLower() == "y")
+                        {
+                            QuerySelect qs = this.GetQuery();
+                            qs.SQLCommand = "Update Opportunity set oppo_qutaprice= (select sum(quta_localeamount) from Quotation where quta_deleted is null and quta_updateoppo = 'Y' and quta_opportunityid = "+quta_opportunityid+" ) where oppo_Opportunityid =" + quta_opportunityid;
+                            qs.ExecuteNonQuery();
+                        }
                         qutaRec.SaveChanges();
                         Dispatch.Redirect(UrlDotNet(ThisDotNetDll, "RunDataPage") + "&quta_Quotationid=" + qutaid);
                     }
@@ -50,6 +58,7 @@ namespace Quotation.DataPages
                     vp.Add(qutaEntry);
                     AddContent(vp);
                     AddSubmitButton("Save", "Save.gif", "javascript:document.EntryForm.HiddenMode.value='Save';");
+                    AddUrlButton("Delete", "Delete.gif", UrlDotNet(ThisDotNetDll, "RunDataPageDelete") + "&quta_Quotationid=" + qutaid);
                     AddUrlButton("Cancel", "Cancel.gif", UrlDotNet(ThisDotNetDll, "RunDataPage") + "&quta_Quotationid=" + qutaid);
                 }
             }

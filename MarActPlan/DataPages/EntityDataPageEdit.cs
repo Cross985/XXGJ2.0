@@ -41,12 +41,12 @@ namespace MarActPlan.DataPages {
                 int errorflag = 0;
                 string errormessage = string.Empty;
                 Record MarActPlan = FindRecord("MarActPlan", "mapl_MarActPlanId=" + mapl_MarActPlanId);
-                string mapl_opportunityid = MarActPlan.GetFieldAsString("mapl_opportunityid");
+                //string mapl_opportunityid = MarActPlan.GetFieldAsString("mapl_opportunityid");
                 EntryGroup MarActPlanNewEntry = new EntryGroup("MarActPlanNewEntry");
                 MarActPlanNewEntry.Fill(MarActPlan);
-                Entry mapl_opportunityidEntry = MarActPlanNewEntry.GetEntry("mapl_opportunityid");
+                //Entry mapl_opportunityidEntry = MarActPlanNewEntry.GetEntry("mapl_opportunityid");
 
-                mapl_opportunityidEntry.ReadOnly = true;
+                //mapl_opportunityidEntry.ReadOnly = true;
 
                 //AddTabHead("CpetProduct");
                 GetTabs("MarActPlan", "Summary");
@@ -65,7 +65,7 @@ namespace MarActPlan.DataPages {
                         ////BusReport.SetField("", );
                         ////BusReport.SaveChanges();
 
-                        string url = UrlDotNet(ThisDotNetDll, "RunListPage") ;
+                        string url = UrlDotNet(ThisDotNetDll, "RunDataPage") ;
                         Dispatch.Redirect(url);
                         errorflag = -1;
                     } else {

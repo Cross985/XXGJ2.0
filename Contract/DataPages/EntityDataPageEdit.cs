@@ -26,12 +26,12 @@ namespace Contract.DataPages
                 base.BuildContents();
 
                 string cont_ContractId = Dispatch.EitherField("cont_ContractId");
-                Record Contract = FindRecord("Contract", "cont_ContractId=" + cont_ContractId);
-                double cont_amount = Contract.GetFieldAsDouble("cont_amount");
-                double cont_discount = Contract.GetFieldAsDouble("cont_discount");
-                double cont_discountamount = cont_amount - cont_discount;
-                Contract.SetField("cont_discountamount", cont_discountamount);
-                Contract.SaveChanges();
+                //Record Contract = FindRecord("Contract", "cont_ContractId=" + cont_ContractId);
+                //double cont_amount = Contract.GetFieldAsDouble("cont_amount");
+                //double cont_discount = Contract.GetFieldAsDouble("cont_discount");
+                //double cont_discountamount = cont_amount - cont_discount;
+                //Contract.SetField("cont_discountamount", cont_discountamount);
+                //Contract.SaveChanges();
             }
             catch (Exception error)
             {

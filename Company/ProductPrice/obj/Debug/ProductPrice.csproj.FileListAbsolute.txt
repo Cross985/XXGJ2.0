@@ -6,3 +6,7 @@ E:\sage\欣兴工具\XXGJ-master\DLL\ProductPrice.dll
 E:\sage\欣兴工具\XXGJ-master\DLL\ProductPrice.pdb
 E:\sage\欣兴工具\XXGJ-master\Company\ProductPrice\obj\Debug\ProductPrice.dll
 E:\sage\欣兴工具\XXGJ-master\Company\ProductPrice\obj\Debug\ProductPrice.pdb
+D:\sage\欣兴工具\XXGJ2.0\DLL\ProductPrice.dll
+D:\sage\欣兴工具\XXGJ2.0\DLL\ProductPrice.pdb
+D:\sage\欣兴工具\XXGJ2.0\Company\ProductPrice\obj\Debug\ProductPrice.dll
+D:\sage\欣兴工具\XXGJ2.0\Company\ProductPrice\obj\Debug\ProductPrice.pdb

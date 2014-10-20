@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceMenu", "ServiceMenu\ServiceMenu.csproj", "{07BA662B-2C5B-4B90-9950-D46BAB4D9FBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceAccept", "ServiceAccept\ServiceAccept.csproj", "{CF2351D4-0EF3-4550-8C61-8D2F8AD56CEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maintenance", "Maintenance\Maintenance.csproj", "{330D91BF-E15D-4E23-8E18-C424A0A03BBE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{07BA662B-2C5B-4B90-9950-D46BAB4D9FBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07BA662B-2C5B-4B90-9950-D46BAB4D9FBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07BA662B-2C5B-4B90-9950-D46BAB4D9FBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07BA662B-2C5B-4B90-9950-D46BAB4D9FBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF2351D4-0EF3-4550-8C61-8D2F8AD56CEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF2351D4-0EF3-4550-8C61-8D2F8AD56CEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF2351D4-0EF3-4550-8C61-8D2F8AD56CEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF2351D4-0EF3-4550-8C61-8D2F8AD56CEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{330D91BF-E15D-4E23-8E18-C424A0A03BBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{330D91BF-E15D-4E23-8E18-C424A0A03BBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{330D91BF-E15D-4E23-8E18-C424A0A03BBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{330D91BF-E15D-4E23-8E18-C424A0A03BBE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

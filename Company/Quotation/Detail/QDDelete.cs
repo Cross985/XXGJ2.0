@@ -33,12 +33,20 @@ namespace Quotation
                 string hMode = Dispatch.EitherField("HiddenMode");
                 if (hMode == "Save")
                 {
-
+                    Record qutarec = FindRecord("Quotation", "quta_Quotationid=" + qutaid);
+                    string oppoid = qutarec.GetFieldAsString("quta_opportunityid");
                     //Record rec =  base.FindCurrentRecord("QuotationDetail");
-                    rec.DeleteRecord = true;
-                    rec.SaveChanges();
-                    string code = rec.GetFieldAsString("qtdt_code");
+                    
+                    double thislocal = rec.GetFieldAsDouble("qtdt_localeamount");
                     QuerySelect qs = this.GetQuery();
+                    qs.SQLCommand = "Update Opportunity set oppo_qutaprice = case when (ISNULL(oppo_qutaprice," + thislocal + ")-" + thislocal + ") < 0 then 0 else (ISNULL(oppo_qutaprice," + thislocal + ")-" + thislocal + ") end  where Oppo_OpportunityId =" + oppoid;
+                    qs.ExecuteNonQuery();
+
+                    rec.DeleteRecord = true;
+                    string code = rec.GetFieldAsString("qtdt_code");
+                    rec.SaveChanges();
+                    
+                    //
                     qs.SQLCommand = "Update QuotationDetail set qtdt_code=qtdt_code-1 where qtdt_code >'" + code + "' and qtdt_deleted is null and qtdt_qutaid =" + qutaid;
                     qs.ExecuteNonQuery();
 

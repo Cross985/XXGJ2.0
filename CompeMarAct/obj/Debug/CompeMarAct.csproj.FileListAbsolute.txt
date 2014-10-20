@@ -3,3 +3,8 @@ E:\孙敏\Sage CRM\欣兴工具\Project\XXGJ\ExportDLL\CompeMarAct.pdb
 E:\孙敏\Sage CRM\欣兴工具\Project\XXGJ\CompeMarAct\obj\Debug\ResolveAssemblyReference.cache
 E:\孙敏\Sage CRM\欣兴工具\Project\XXGJ\CompeMarAct\obj\Debug\CompeMarAct.dll
 E:\孙敏\Sage CRM\欣兴工具\Project\XXGJ\CompeMarAct\obj\Debug\CompeMarAct.pdb
+D:\sage\欣兴工具\XXGJ2.0\ExportDLL\CompeMarAct.dll
+D:\sage\欣兴工具\XXGJ2.0\ExportDLL\CompeMarAct.pdb
+D:\sage\欣兴工具\XXGJ2.0\CompeMarAct\obj\Debug\CompeMarAct.dll
+D:\sage\欣兴工具\XXGJ2.0\CompeMarAct\obj\Debug\CompeMarAct.pdb
+D:\sage\欣兴工具\XXGJ2.0\CompeMarAct\obj\Debug\CompeMarAct.csprojResolveAssemblyReference.cache

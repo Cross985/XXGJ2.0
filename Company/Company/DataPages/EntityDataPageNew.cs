@@ -41,7 +41,7 @@ namespace Company.DataPages
                     string comp_shortname = CompRec.GetFieldAsString("comp_shortname");
 
                     QuerySelect qs = this.GetQuery();
-                    qs.SQLCommand = "select count(*) as cnt from Company where comp_deleted is null and (comp_shortname = '" + comp_shortname + "' or comp_fullname = '" + comp_fullname + "')";
+                    qs.SQLCommand = "select count(*) as cnt from Company where comp_deleted is null and (comp_shortname = '" + comp_shortname + "' or comp_name = '" + comp_fullname + "')";
                     qs.ExecuteReader();
                     int cnt = -1;
                     if (!qs.Eof())
@@ -50,12 +50,23 @@ namespace Company.DataPages
                     if (cnt > 0)
                     {
                         errflag = 1;
-                        errmsg = "客户全称或快捷码重复！";
+                        errmsg = "存在重复客户！";
                     }
                    
                     if (CompEntry.Validate() == true  && DealEntry.Validate() && DealEntry.Validate() == true && StatusEntry.Validate() && errflag == 0)
                     {
-                      
+
+                        string code = "CRM";
+                        DateTime dt = DateTime.Now;
+                        string year = dt.Year.ToString().Substring(2,2);
+                        string month = dt.Month.ToString();
+                        code += year + month;
+                        //QuerySelect qs = this.GetQuery();
+                        qs.SQLCommand = "select count(*) as cnt from Company where comp_deleted is null and comp_code like '"+code+"%'";
+                        qs.ExecuteReader();
+                        string count = qs.FieldValue("cnt").PadLeft(5,'0');
+                        code += count;
+                        CompRec.SetField("comp_code",code);
                         CompRec.SaveChanges();
                         Record AddrRec = new Record("Address");
                         AddrEntry.Fill(AddrRec);
@@ -64,7 +75,7 @@ namespace Company.DataPages
                         {
                             AddrRec.SaveChanges();
                         }
-                        Dispatch.Redirect(Url("200") + "&J=Summary&T=Company&comp_companyid=" + CompRec.RecordId.ToString());
+                        Dispatch.Redirect(Url("200") + "&key0=1&key1="+CompRec.RecordId.ToString()+"&J=Summary&T=Company&comp_companyid=" + CompRec.RecordId.ToString());
                     }
 
 

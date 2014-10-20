@@ -28,19 +28,20 @@ namespace ServiceAccept.DataPages {
                 screenServiceAccept.Fill(ServiceAccept);
 
                 string status = ServiceAccept.GetFieldAsString("seac_status");
-
+                string seac_type = ServiceAccept.GetFieldAsString("seac_type");
 
                 VerticalPanel vpMainPanel = new VerticalPanel();
                 vpMainPanel.AddAttribute("width", "100%");
                 vpMainPanel.Add(screenServiceAccept);
-
-                List CusUseStatusGrid = new List("CusUseStatusGrid");
-                CusUseStatusGrid.Filter = "cust_deleted is null and cust_serviceacceptid=" + seac_ServiceAcceptId;
-                CusUseStatusGrid.RowsPerScreen = 500;
-                CusUseStatusGrid.ShowNavigationButtons = true;
-                CusUseStatusGrid.PadBottom = false;
-                vpMainPanel.Add(CusUseStatusGrid);
-
+                if (seac_type == "product")
+                {
+                    List CusUseStatusGrid = new List("CusUseStatusGrid");
+                    CusUseStatusGrid.Filter = "cust_deleted is null and cust_serviceacceptid=" + seac_ServiceAcceptId;
+                    CusUseStatusGrid.RowsPerScreen = 500;
+                    CusUseStatusGrid.ShowNavigationButtons = true;
+                    CusUseStatusGrid.PadBottom = false;
+                    vpMainPanel.Add(CusUseStatusGrid);
+                }
                 List ServiceDealGrid = new List("ServiceDealGrid");
                 ServiceDealGrid.Filter = "sede_deleted is null and sede_serviceacceptid=" + seac_ServiceAcceptId;
                 ServiceDealGrid.RowsPerScreen = 500;
@@ -51,9 +52,11 @@ namespace ServiceAccept.DataPages {
                 AddContent(vpMainPanel);
                 AddUrlButton("Edit", "Edit.gif", UrlDotNet(ThisDotNetDll, "RunDataPageEdit") + "&seac_ServiceAcceptId=" + seac_ServiceAcceptId);
                 AddUrlButton("Delete", "Delete.gif", UrlDotNet(ThisDotNetDll, "RunDataPageDelete") + "&seac_ServiceAcceptId=" + seac_ServiceAcceptId);
-                AddUrlButton("Add CusUseStatus", "new.gif", UrlDotNet(ThisDotNetDll, "RunCusUseStatusAdd") + "&seac_ServiceAcceptId=" + seac_ServiceAcceptId);
+                if (seac_type == "product")
+                    AddUrlButton("Add CusUseStatus", "new.gif", UrlDotNet(ThisDotNetDll, "RunCusUseStatusAdd") + "&seac_ServiceAcceptId=" + seac_ServiceAcceptId);
                 AddUrlButton("Add ServiceDeal", "new.gif", UrlDotNet(ThisDotNetDll, "RunServiceDealAdd") + "&seac_ServiceAcceptId=" + seac_ServiceAcceptId);
-                AddUrlButton("Continue", "Continue.gif", UrlDotNet(ThisDotNetDll, "RunListPage"));
+                AddUrlButton("Continue", "Continue.gif", UrlDotNet("ServiceMenu", "RunCustomerService"));
+                AddWorkflowButtons("ServiceAccept");
             } catch (Exception error) {
                 this.AddError(error.Message);
             }

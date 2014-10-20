@@ -78,7 +78,7 @@ namespace MarActPlan.DataPages {
                     vpMainPanel.Add(MarActPlanNewEntry);
                     AddContent(vpMainPanel);
                     AddSubmitButton("Save", "Save.gif", sUrl);
-                    AddUrlButton("Cancel", "cancel.gif", UrlDotNet(ThisDotNetDll, "RunListPage"));
+                    AddUrlButton("Cancel", "cancel.gif", UrlDotNet(ThisDotNetDll, "RunListPage") + "&J=MarActPlan&T=MarketingManagement");
                 }
 
             } catch (Exception e) {

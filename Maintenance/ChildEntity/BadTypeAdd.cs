@@ -29,7 +29,7 @@ namespace Maintenance
                     bred_busreportidEntry.ReadOnly = true;
                 }
 
-                AddTabHead("DecoratePerson");
+                AddTabHead("BadType");
                 if (hMode == "Save")
                 {
                     Record BadType = new Record("BadType");

@@ -13,3 +13,9 @@ D:\sage\欣兴工具\Project\XXGJ\WorkMenu\obj\Debug\WorkMenu.Properties.Resourc
 D:\sage\欣兴工具\Project\XXGJ\WorkMenu\obj\Debug\WorkMenu.csproj.GenerateResource.Cache
 D:\sage\欣兴工具\Project\XXGJ\WorkMenu\obj\Debug\WorkMenu.dll
 D:\sage\欣兴工具\Project\XXGJ\WorkMenu\obj\Debug\WorkMenu.pdb
+D:\sage\欣兴工具\XXGJ2.0\ExportDLL\WorkMenu.dll
+D:\sage\欣兴工具\XXGJ2.0\ExportDLL\WorkMenu.pdb
+D:\sage\欣兴工具\XXGJ2.0\WorkMenu\obj\Debug\WorkMenu.Properties.Resources.resources
+D:\sage\欣兴工具\XXGJ2.0\WorkMenu\obj\Debug\WorkMenu.csproj.GenerateResource.Cache
+D:\sage\欣兴工具\XXGJ2.0\WorkMenu\obj\Debug\WorkMenu.dll
+D:\sage\欣兴工具\XXGJ2.0\WorkMenu\obj\Debug\WorkMenu.pdb

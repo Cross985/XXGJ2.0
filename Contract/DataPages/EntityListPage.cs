@@ -12,7 +12,15 @@ namespace Contract.DataPages
         {
 
         }
+        public override void GetTabs()
+        {
+            string strTopContent = "<TABLE WIDTH=100%><TR><TD CLASS=TOPHEADING WIDTH=60><IMG SRC='" + CurrentUser.VirtualImgPath() + "Icons/Competitor.gif' BORDER=0 ALIGN=MIDDLE></td><td CLASS=VIEWBOXCAPTION><SPAN CLASS=TOPCAPTION>合同列表</SPAN></td></tr></table>";
+            AddTopContent(strTopContent);
 
+            this.UseEntityTabs = false;
+            this.GetTabs("SalesManagement", "Contract");
+
+        }
         public override void BuildContents()
         {
             try
@@ -27,7 +35,7 @@ namespace Contract.DataPages
         }
         public override void AddNewButton()
         {
-            AddUrlButton("New", "New.gif", UrlDotNet(ThisDotNetDll, "RunDataPageNew") + "&J=Contract&T=new");
+            AddUrlButton("New", "New.gif", UrlDotNet(ThisDotNetDll, "RunDataPageNew"));
         }
 
     }

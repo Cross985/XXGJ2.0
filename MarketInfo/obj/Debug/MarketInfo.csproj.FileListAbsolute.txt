@@ -10,3 +10,7 @@ E:\孙敏\Sage CRM\欣兴工具\Project\XXGJ\ExportDLL\MarketInfo.dll
 E:\孙敏\Sage CRM\欣兴工具\Project\XXGJ\ExportDLL\MarketInfo.pdb
 E:\孙敏\Sage CRM\欣兴工具\Project\XXGJ\MarketInfo\obj\Debug\MarketInfo.dll
 E:\孙敏\Sage CRM\欣兴工具\Project\XXGJ\MarketInfo\obj\Debug\MarketInfo.pdb
+D:\sage\欣兴工具\XXGJ2.0\ExportDLL\MarketInfo.dll
+D:\sage\欣兴工具\XXGJ2.0\ExportDLL\MarketInfo.pdb
+D:\sage\欣兴工具\XXGJ2.0\MarketInfo\obj\Debug\MarketInfo.dll
+D:\sage\欣兴工具\XXGJ2.0\MarketInfo\obj\Debug\MarketInfo.pdb

@@ -30,7 +30,7 @@ namespace SalesMenu
         {
             if (CurrentUser.HasRights(Sage.PermissionType.Insert, "OppoCompetitor") || CurrentUser.IsAdmin())
             {
-                AddUrlButton("New", "New.gif", UrlDotNet("OppoCompetitor", "RunDataPageNew") + "&J=OppoCompetitor&T=new");
+                AddUrlButton("New", "New.gif", UrlDotNet("OppoCompetitor", "RunDataPageNew"));
             }
         }
     }

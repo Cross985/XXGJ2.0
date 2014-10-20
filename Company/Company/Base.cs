@@ -123,6 +123,10 @@ namespace Company
         {
             AretVal = new InvoiceTitleList();
         }
+        public static void RunProcessMethodList(ref Web AretVal)
+        {
+            AretVal = new ProcessMethodList();
+        }
         public static void RunCompetitorList(ref Web AretVal)
         {
             AretVal = new CompetitorList();
@@ -130,6 +134,22 @@ namespace Company
         public static void RunFollowMenuList(ref Web AretVal)
         {
             AretVal = new FollowMenuList();
+        }
+        public static void RunProcessMethodSummary(ref Web AretVal)
+        {
+            AretVal = new ProcessMethodSummary();
+        }
+        public static void RunProcessMethodAdd(ref Web AretVal)
+        {
+            AretVal = new ProcessMethodAdd();
+        }
+        public static void RunProcessMethodEdit(ref Web AretVal)
+        {
+            AretVal = new ProcessMethodEdit();
+        }
+        public static void RunProcessMethodDelete(ref Web AretVal)
+        {
+            AretVal = new ProcessMethodDelete();
         }
     }
 }

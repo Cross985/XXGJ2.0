@@ -12,6 +12,7 @@ namespace MarketInfo.DataPages
             : base("MarketInfo", "maif_MarketInfoId", "MarketInfoNewEntry")
         {
             UseTabs = false;
+            this.CancelButton = false;
         }
 
         public override void BuildContents()
@@ -23,7 +24,9 @@ namespace MarketInfo.DataPages
                 AddTabHead("新建市场情报");
                 this.EntryGroups[0].Title = "MarketInfo";
                 
-                base.BuildContents();                
+                base.BuildContents();
+                AddUrlButton("Cancel", "Cancel.gif", UrlDotNet("MarketingMenu", "RunMarketInfo") + "&J=MarketInfo&T=MarketingManagement");
+                    
             }
             catch (Exception error)
             {

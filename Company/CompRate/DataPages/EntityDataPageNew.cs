@@ -26,7 +26,7 @@ namespace CompRate.DataPages
                     compid = Dispatch.EitherField("key1");
                 /* Add your code here */
                 base.BuildContents();
-                AddUrlButton("Cancel", "Cancel.gif", UrlDotNet("Company", "RunDataPage") + "&comp_companyid=" + compid + "&J=Summary&T=CompanySummary");
+                AddUrlButton("Cancel", "Cancel.gif", UrlDotNet("Company", "RunCompRateList") + "&comp_companyid=" + compid + "&J=CompRate&T=Company");
 
                
             }
@@ -44,7 +44,7 @@ namespace CompRate.DataPages
             //cprtRec.SetField("cprt_companyid",compid);
             //cprtRec.SaveChanges();
             //base.AfterSave(screen);
-            Dispatch.Redirect(UrlDotNet("Company", "RunCompRateList") + "&comp_companyid=" + compid + "&J=Summary");
+            Dispatch.Redirect(UrlDotNet("Company", "RunCompRateList") + "&comp_companyid=" + compid + "&J=CompRate&T=Company");
         }
     }
 }

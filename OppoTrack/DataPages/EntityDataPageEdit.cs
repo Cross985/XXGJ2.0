@@ -44,7 +44,7 @@ namespace OppoTrack.DataPages {
                         ,oppo_certainty = (select optr_certainty  from OppoTrack where optr_OppoTrackId = " + OppoTrack.RecordId.ToString() + @") where oppo_opportunityid=" + optr_opportunityid;
                         qs.ExecuteNonQuery();
 
-                        string url =UrlDotNet(ThisDotNetDll, "RunListPage") + "&J=OppoTrack&T=Opportunity";
+                        string url = UrlDotNet(ThisDotNetDll, "RunDataPage") + "&optr_OppoTrackId=" + optr_OppoTrackId + "&J=Summary";
                         Dispatch.Redirect(url);
                         errorflag = -1;
                     } else {

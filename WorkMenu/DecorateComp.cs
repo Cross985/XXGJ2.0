@@ -30,7 +30,7 @@ namespace WorkMenu
         {
             if (CurrentUser.HasRights(Sage.PermissionType.Insert, "MonthPlan") || CurrentUser.IsAdmin())
             {
-                AddUrlButton("New", "New.gif", UrlDotNet("MonthPlan", "RunDataPageNew") + "&J=MonthPlan&T=new");
+                AddUrlButton("New", "New.gif", UrlDotNet("MonthPlan", "RunDataPageNew"));
             }
         }
     }

@@ -5,3 +5,7 @@ E:\孙敏\Sage CRM\欣兴工具\Project\XXGJ\DecorateComp\obj\Debug\DecorateComp
 E:\孙敏\Sage CRM\欣兴工具\Project\XXGJ\DecorateComp\obj\Debug\DecorateComp.pdb
 E:\孙敏\Sage CRM\欣兴工具\Project\XXGJ\ExportDLL\DecorateComp.dll
 E:\孙敏\Sage CRM\欣兴工具\Project\XXGJ\ExportDLL\DecorateComp.pdb
+D:\sage\欣兴工具\XXGJ2.0\ExportDLL\DecorateComp.dll
+D:\sage\欣兴工具\XXGJ2.0\ExportDLL\DecorateComp.pdb
+D:\sage\欣兴工具\XXGJ2.0\DecorateComp\obj\Debug\DecorateComp.dll
+D:\sage\欣兴工具\XXGJ2.0\DecorateComp\obj\Debug\DecorateComp.pdb

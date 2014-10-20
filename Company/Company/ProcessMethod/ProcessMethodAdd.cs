@@ -6,7 +6,7 @@ using Sage.CRM.Controls;
 using Sage.CRM.UI;
 using Sage.CRM.Data;
 
-namespace MonthPlan
+namespace Company
 {
     public class ProcessMethodAdd : Web
     {
@@ -17,19 +17,19 @@ namespace MonthPlan
             try
             {
                 string hMode = Dispatch.EitherField("HiddenMode");
-                string mopl_MonthPlanId = Dispatch.EitherField("mopl_MonthPlanId");
+                string comp_companyid = Dispatch.EitherField("comp_companyid");
                 int errorflag = 0;
                 string errormessage = string.Empty;
                 EntryGroup ProcessMethodNewEntry = new EntryGroup("ProcessMethodNewEntry");
                 //CostAdjustmentProductNewEntry.Title = "Add CostAdjustmentProduct"; 
-                Entry bred_busreportidEntry = ProcessMethodNewEntry.GetEntry("pmet_monthplanid");
+                Entry bred_busreportidEntry = ProcessMethodNewEntry.GetEntry("pmet_companyid");
                 if (bred_busreportidEntry != null)
                 {
-                    bred_busreportidEntry.DefaultValue = mopl_MonthPlanId;
+                    bred_busreportidEntry.DefaultValue = comp_companyid;
                     bred_busreportidEntry.ReadOnly = true;
                 }
 
-                AddTabHead("DecoratePerson");
+                AddTabHead("ProcessMethod");
                 if (hMode == "Save")
                 {
                     Record ProcessMethod = new Record("ProcessMethod");
@@ -37,9 +37,10 @@ namespace MonthPlan
                     if (ProcessMethodNewEntry.Validate())
                     {
                         ProcessMethod.SaveChanges();
-                        string url = UrlDotNet(ThisDotNetDll, "RunDataPage") + "&mopl_MonthPlanId=" + mopl_MonthPlanId + "&J=Summary";
-                        url = url.Replace("Key37", "DecorateCompid");
-                        url = url + "&Key37=" + mopl_MonthPlanId;
+                        string pmet_ProcessMethodid = ProcessMethod.RecordId.ToString();
+                        string url = UrlDotNet(ThisDotNetDll, "RunProcessMethodSummary") + "&pmet_ProcessMethodid=" + pmet_ProcessMethodid + "&J=Summary";
+                        url = url.Replace("Key37", "ProcessMethodid");
+                        url = url + "&Key37=" + pmet_ProcessMethodid;
                         Dispatch.Redirect(url);
                         errorflag = -1;
                     }
@@ -63,9 +64,9 @@ namespace MonthPlan
                     vpMainPanel.Add(ProcessMethodNewEntry);
                     AddContent(vpMainPanel);
                     AddSubmitButton("Save", "Save.gif", sUrl);
-                    string url = UrlDotNet(ThisDotNetDll, "RunDataPage") + "&mopl_MonthPlanId=" + mopl_MonthPlanId + "&J=Summary";
-                    url = url.Replace("Key37", "DecoratePersonid");
-                    url = url + "&Key37=" + mopl_MonthPlanId;
+                    string url = UrlDotNet("Company", "RunProcessMethodList") + "&comp_companyid=" + comp_companyid + "&J=Summary";
+                    url = url.Replace("Key37", "ProcessMethodid");
+                    url = url + "&Key37=" + comp_companyid;
                     AddUrlButton("Cancel", "cancel.gif", url);
                 }
 

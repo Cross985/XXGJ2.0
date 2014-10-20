@@ -15,3 +15,7 @@ E:\sage\欣兴工具\XXGJ-master\ExportDLL\OppoTrack.pdb
 E:\sage\欣兴工具\XXGJ-master\OppoTrack\obj\Debug\OppoTrack.csprojResolveAssemblyReference.cache
 E:\sage\欣兴工具\XXGJ-master\OppoTrack\obj\Debug\OppoTrack.dll
 E:\sage\欣兴工具\XXGJ-master\OppoTrack\obj\Debug\OppoTrack.pdb
+D:\sage\欣兴工具\XXGJ2.0\ExportDLL\OppoTrack.dll
+D:\sage\欣兴工具\XXGJ2.0\ExportDLL\OppoTrack.pdb
+D:\sage\欣兴工具\XXGJ2.0\OppoTrack\obj\Debug\OppoTrack.dll
+D:\sage\欣兴工具\XXGJ2.0\OppoTrack\obj\Debug\OppoTrack.pdb

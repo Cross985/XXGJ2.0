@@ -62,6 +62,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base.cs" />
+    <Compile Include="ChildEntity\NewIndustyPlanAdd.cs" />
+    <Compile Include="ChildEntity\NewIndustyPlanEdit.cs" />
     <Compile Include="ChildEntity\PlanDetailAdd.cs" />
     <Compile Include="ChildEntity\PlanDetailEdit.cs" />
     <Compile Include="ChildEntity\PlanDetailDelete.cs" />
@@ -78,10 +80,10 @@
     <Compile Include="ChildEntity\DealerDetailDelete.cs" />
     <Compile Include="ChildEntity\DealerDetailEdit.cs" />
     <Compile Include="ChildEntity\DealerDetailSummary.cs" />
-    <Compile Include="ChildEntity\ProcessMethodAdd.cs" />
-    <Compile Include="ChildEntity\ProcessMethodDelete.cs" />
-    <Compile Include="ChildEntity\ProcessMethodEdit.cs" />
-    <Compile Include="ChildEntity\ProcessMethodSummary.cs" />
+    <Compile Include="ProcessMethod\ProcessMethodAdd.cs" />
+    <Compile Include="ProcessMethod\ProcessMethodDelete.cs" />
+    <Compile Include="ProcessMethod\ProcessMethodEdit.cs" />
+    <Compile Include="ProcessMethod\ProcessMethodSummary.cs" />
     <Compile Include="DataPages\EntityDataPage.cs" />
     <Compile Include="DataPages\EntityDataPageDelete.cs" />
     <Compile Include="DataPages\EntityDataPageEdit.cs" />

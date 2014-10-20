@@ -5,3 +5,7 @@ E:\孙敏\Sage CRM\欣兴工具\Project\XXGJ\MonthPlan\obj\Debug\MonthPlan.dll
 E:\孙敏\Sage CRM\欣兴工具\Project\XXGJ\MonthPlan\obj\Debug\MonthPlan.pdb
 E:\孙敏\Sage CRM\欣兴工具\Project\XXGJ\ExportDLL\MonthPlan.dll
 E:\孙敏\Sage CRM\欣兴工具\Project\XXGJ\ExportDLL\MonthPlan.pdb
+D:\sage\欣兴工具\XXGJ2.0\ExportDLL\MonthPlan.dll
+D:\sage\欣兴工具\XXGJ2.0\ExportDLL\MonthPlan.pdb
+D:\sage\欣兴工具\XXGJ2.0\MonthPlan\obj\Debug\MonthPlan.dll
+D:\sage\欣兴工具\XXGJ2.0\MonthPlan\obj\Debug\MonthPlan.pdb

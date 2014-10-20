@@ -8,3 +8,7 @@ E:\sage\欣兴工具\XXGJ-master\DLL\Company.dll
 E:\sage\欣兴工具\XXGJ-master\DLL\Company.pdb
 E:\sage\欣兴工具\XXGJ-master\Company\Company\obj\Debug\Company.dll
 E:\sage\欣兴工具\XXGJ-master\Company\Company\obj\Debug\Company.pdb
+D:\sage\欣兴工具\XXGJ2.0\DLL\Company.dll
+D:\sage\欣兴工具\XXGJ2.0\DLL\Company.pdb
+D:\sage\欣兴工具\XXGJ2.0\Company\Company\obj\Debug\Company.dll
+D:\sage\欣兴工具\XXGJ2.0\Company\Company\obj\Debug\Company.pdb

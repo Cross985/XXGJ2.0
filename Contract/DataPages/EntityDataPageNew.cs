@@ -11,13 +11,15 @@ namespace Contract.DataPages
         public ContractDataPageNew()
             : base("Contract", "cont_ContractId", "ContractNewEntry")
         {
+            this.UseEntityTabs = false;
+            this.CancelButton = false;
         }
 
         public override void BuildContents()
         {
             try
             {
-
+                AddTabHead("Contract");
                 /* Add your code here */
                 this.EntryGroups[0].Title = "Contract";
                 //QuerySelect s = new QuerySelect();
@@ -25,6 +27,8 @@ namespace Contract.DataPages
                 //s.SQLCommand = "update Person set pers_address=Addr_Address1, pers_postcode=Addr_PostCode, pers_fax=(RTRIM(ISNULL(pers_faxcountrycode, '')) + ' ' + RTRIM(ISNULL(pers_faxareacode, '')) + ' ' + RTRIM(ISNULL(pers_faxnumber, ''))),Pers_Phone=(RTRIM(ISNULL(Pers_PhoneCountryCode, '')) + ' ' + RTRIM(ISNULL(Pers_PhoneAreaCode, '')) + ' ' + RTRIM(ISNULL(Pers_PhoneNumber, ''))) from Person  left join Address_Link on AdLi_PersonID=Pers_PersonId left join Address on Addr_AddressId=AdLi_AddressId left join Email on Emai_CompanyID=Pers_CompanyId where AdLi_Type='Business'";
                 //s.ExecuteNonQuery();
                 base.BuildContents();
+                AddUrlButton("Cancel", "Cancel.gif", UrlDotNet("Contract", "RunListPage&J=Contract&T=SalesManagement"));
+                
             }
             catch (Exception error)
             {
@@ -46,7 +50,7 @@ namespace Contract.DataPages
                 cnt = Convert.ToInt32(s.FieldValue("count"));
             }
             string code = string.Empty;
-            code = prefix + (cnt + 1).ToString().PadLeft(4, '0');
+            code = prefix + (cnt + 1).ToString().PadLeft(4, '1');
             order.SetField("cont_name", code);
             order.SaveChanges();
             base.AfterSave(screen);

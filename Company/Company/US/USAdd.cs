@@ -30,7 +30,7 @@ namespace Company
                     {
                         USRec.SetField("usst_companyid",compid);
                         USRec.SaveChanges();
-                        Dispatch.Redirect(UrlDotNet(ThisDotNetDll, "RunUSList") + "&comp_companyid=" + compid + "&J=Summary&T=CompanySummary");
+                        Dispatch.Redirect(UrlDotNet(ThisDotNetDll, "RunUSList") + "&comp_companyid=" + compid + "&J=UseSituation&T=Company");
                     }
  
                 }
@@ -45,7 +45,7 @@ namespace Company
 
                     string url = "javascript:document.EntryForm.HiddenMode.value='Save';";
                     AddSubmitButton("Save","Save.gif",url);
-                    AddUrlButton("Cancel", "cancel.gif", UrlDotNet(ThisDotNetDll, "RunUSList") + "&comp_companyid=" + compid + "&J=Summary&T=CompanySummary");
+                    AddUrlButton("Cancel", "cancel.gif", UrlDotNet(ThisDotNetDll, "RunUSList") + "&comp_companyid=" + compid + "&J=UseSituation&T=Company");
                 }
 
             }

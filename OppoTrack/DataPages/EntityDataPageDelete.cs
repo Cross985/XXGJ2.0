@@ -17,6 +17,7 @@ namespace OppoTrack.DataPages {
                 string errormessage = string.Empty;
                 Record OppoTrack = FindRecord("OppoTrack", "optr_OppoTrackId=" + id);
                 string optr_opportunityid = OppoTrack.GetFieldAsString("optr_opportunityid");
+                string oppoid = Dispatch.EitherField("key7");
                 EntryGroup OppoTrackNewEntry = new EntryGroup("OppoTrackNewEntry");
                 OppoTrackNewEntry.Fill(OppoTrack);
 
@@ -33,7 +34,11 @@ namespace OppoTrack.DataPages {
                         ,oppo_certainty = (select optr_certainty  from OppoTrack where optr_OppoTrackId = " + OppoTrack.RecordId.ToString() + @") where oppo_opportunityid=" + optr_opportunityid;
                     qs.ExecuteNonQuery();
 
-                    string url = UrlDotNet(ThisDotNetDll, "RunListPage") + "&J=OppoTrack&T=Opportunity";
+                    string url = string.Empty;
+                    if (string.IsNullOrEmpty(oppoid))
+                        url = UrlDotNet("SalesMenu", "RunOppoTrack") + "&J=OppoTrack&T=SalesManagement";
+                    else
+                        url = UrlDotNet(ThisDotNetDll, "RunListPage") + "&J=OppoTrack&T=Opportunity";
                     Dispatch.Redirect(url);
                 }
                 if (errorflag != -1) {
@@ -46,7 +51,7 @@ namespace OppoTrack.DataPages {
                     vpMainPanel.Add(OppoTrackNewEntry);
                     AddContent(vpMainPanel);
                     AddSubmitButton("ConfirmDelete", "Delete.gif", sUrl);
-                    string url = UrlDotNet(ThisDotNetDll, "RunListPage") + "&J=OppoTrack&T=Opportunity";
+                    string url = UrlDotNet(ThisDotNetDll, "RunDataPage") + "&optr_OppoTrackId=" + id + "&J=Summary";
                     AddUrlButton("Cancel", "cancel.gif", url);
                 }
 

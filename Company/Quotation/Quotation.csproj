@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base.cs" />
+    <Compile Include="Calculate.cs" />
     <Compile Include="DataPages\EntityDataPage.cs" />
     <Compile Include="DataPages\EntityDataPageDelete.cs" />
     <Compile Include="DataPages\EntityDataPageEdit.cs" />

@@ -3,3 +3,7 @@ E:\孙敏\Sage CRM\欣兴工具\Project\XXGJ\ExportDLL\Maintenance.pdb
 E:\孙敏\Sage CRM\欣兴工具\Project\XXGJ\Maintenance\obj\Debug\ResolveAssemblyReference.cache
 E:\孙敏\Sage CRM\欣兴工具\Project\XXGJ\Maintenance\obj\Debug\Maintenance.dll
 E:\孙敏\Sage CRM\欣兴工具\Project\XXGJ\Maintenance\obj\Debug\Maintenance.pdb
+D:\sage\欣兴工具\XXGJ2.0\ExportDLL\Maintenance.dll
+D:\sage\欣兴工具\XXGJ2.0\ExportDLL\Maintenance.pdb
+D:\sage\欣兴工具\XXGJ2.0\Maintenance\obj\Debug\Maintenance.dll
+D:\sage\欣兴工具\XXGJ2.0\Maintenance\obj\Debug\Maintenance.pdb

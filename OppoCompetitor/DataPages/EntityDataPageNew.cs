@@ -1,27 +1,4 @@
-﻿//using System;
-//using System.Collections.Generic;
-//using System.Text;
-//using Sage.CRM.WebObject;
-
-//namespace OppoCompetitor.DataPages {
-//    public class OppoCompetitorDataPageNew : DataPageNew {
-//        public OppoCompetitorDataPageNew()
-//            : base("OppoCompetitor", "opco_OppoCompetitorId", "OppoCompetitorDetailBox") {
-//        }
-
-//        public override void BuildContents() {
-//            try {
-
-//                /* Add your code here */
-
-//                base.BuildContents();
-//            } catch (Exception error) {
-//                this.AddError(error.Message);
-//            }
-//        }
-//    }
-//}
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 using Sage.CRM.WebObject;
@@ -35,6 +12,7 @@ namespace OppoCompetitor.DataPages {
             AddContent(HTML.Form());
 
             try {
+                //AddTabHead("OppoCompetitor");
                 string hMode = Dispatch.EitherField("HiddenMode");
                 string opco_opportunityid = Dispatch.EitherField("Key7");
                 string opportunityid = Dispatch.EitherField("Key7");
@@ -54,7 +32,7 @@ namespace OppoCompetitor.DataPages {
                 //    //opco_opportunityidEntry.ReadOnly = true;
                 //}
 
-                AddTabHead("OppoCompetitor");
+                AddTabHead("Competitor");
                 if (hMode == "Save") {
                     Record OppoCompetitor = new Record("OppoCompetitor");
                     OppoCompetitorNewEntry.Fill(OppoCompetitor);
@@ -87,7 +65,7 @@ namespace OppoCompetitor.DataPages {
                     if (!string.IsNullOrEmpty(opportunityid)) {
                         AddUrlButton("Cancel", "cancel.gif", UrlDotNet(ThisDotNetDll, "RunListPage") + "&J=OppoCompetitor&T=Opportunity");
                     } else {
-                        AddUrlButton("Cancel", "cancel.gif", UrlDotNet(ThisDotNetDll, "RunCompetitorListPage") + "&J=OppoCompetitor&T=Opportunity");
+                        AddUrlButton("Cancel", "cancel.gif", UrlDotNet("SalesMenu", "RunOppoCompetitor") + "&J=OppoCompetitor&T=SalesManagement");
 
                     } 
                 }

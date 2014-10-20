@@ -21,7 +21,7 @@ namespace MarketingMenu
 
         public override void GetTabs()
         {
-            string strTopContent = "<TABLE WIDTH=100%><TR><TD CLASS=TOPHEADING WIDTH=60><IMG SRC='" + CurrentUser.VirtualImgPath() + "Icons/MarActPool.gif' BORDER=0 ALIGN=MIDDLE></td><td CLASS=VIEWBOXCAPTION><SPAN CLASS=TOPCAPTION>市场活动池</SPAN></td></tr></table>";
+            string strTopContent = "<TABLE WIDTH=100%><TR><TD CLASS=TOPHEADING WIDTH=60><IMG SRC='" + CurrentUser.VirtualImgPath() + "Icons/MarActPool.gif' BORDER=0 ALIGN=MIDDLE></td><td CLASS=VIEWBOXCAPTION><SPAN CLASS=TOPCAPTION>市场活动</SPAN></td></tr></table>";
             AddTopContent(strTopContent);
             GetTabs("MarketingManagement", "MarActPool");            
         }
@@ -30,7 +30,7 @@ namespace MarketingMenu
         {
             if (CurrentUser.HasRights(Sage.PermissionType.Insert, "MarActPool") || CurrentUser.IsAdmin())
             {
-                AddUrlButton("New", "New.gif", UrlDotNet("MarActPool", "RunDataPageNew") + "&J=MarActPool&T=new");
+                AddUrlButton("New", "New.gif", UrlDotNet("MarActPool", "RunDataPageNew"));
             }
         }
     }

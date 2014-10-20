@@ -37,7 +37,7 @@ namespace MarActPool.DataPages {
                 AddUrlButton("Delete", "Delete.gif", UrlDotNet(ThisDotNetDll, "RunDataPageDelete") + "&mapo_MarActPoolId=" + mapo_MarActPoolId);
                 AddUrlButton("Add MarActPlan", "New.gif", UrlDotNet("MarActPlan", "RunDataPageNew") + "&mapo_MarActPoolId=" + mapo_MarActPoolId);
 
-                AddUrlButton("Continue", "Continue.gif", UrlDotNet(ThisDotNetDll, "RunListPage"));
+                AddUrlButton("Continue", "Continue.gif", UrlDotNet("MarketingMenu", "RunMarActPool") + "&J=MarActPool&T=MarketingManagement");
             } catch (Exception error) {
                 this.AddError(error.Message);
             }

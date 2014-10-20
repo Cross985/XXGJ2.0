@@ -9,14 +9,16 @@ namespace ServiceAccept.DataPages {
     public class ServiceAcceptDataPageNew : DataPageNew {
         public ServiceAcceptDataPageNew()
             : base("ServiceAccept", "seac_ServiceAcceptId", "ServiceAcceptNewEntry") {
+                this.CancelButton = false;
         }
 
         public override void BuildContents() {
             try {
 
                 /* Add your code here */
-
+                AddTabHead("ServiceAccept");
                 base.BuildContents();
+                AddUrlButton("Cancel", "Cancel.gif", UrlDotNet("ServiceMenu", "RunCustomerService") + "&J=ServiceAccept&T=ServiceManagement");
             } catch (Exception error) {
                 this.AddError(error.Message);
             }

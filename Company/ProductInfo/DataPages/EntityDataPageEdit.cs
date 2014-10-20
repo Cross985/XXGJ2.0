@@ -27,7 +27,7 @@ namespace ProductInfo.DataPages
                 /* Add your code here */
                 base.BuildContents();
 
-                AddUrlButton("Cancel", "Cancel.gif", UrlDotNet("Company", "RunDataPage") + "&comp_companyid=" + compid);
+                AddUrlButton("Cancel", "Cancel.gif", UrlDotNet("ProductInfo", "RunDataPage") + "&comp_companyid=" + compid);
 
                
             }

@@ -14,3 +14,8 @@ E:\sage\欣兴工具\XXGJ-master\ExportDLL\Contract.dll
 E:\sage\欣兴工具\XXGJ-master\ExportDLL\Contract.pdb
 E:\sage\欣兴工具\XXGJ-master\Contract\obj\Debug\Contract.dll
 E:\sage\欣兴工具\XXGJ-master\Contract\obj\Debug\Contract.pdb
+D:\sage\欣兴工具\XXGJ2.0\ExportDLL\Contract.dll
+D:\sage\欣兴工具\XXGJ2.0\ExportDLL\Contract.pdb
+D:\sage\欣兴工具\XXGJ2.0\Contract\obj\Debug\Contract.dll
+D:\sage\欣兴工具\XXGJ2.0\Contract\obj\Debug\Contract.pdb
+D:\sage\欣兴工具\XXGJ2.0\Contract\obj\Debug\Contract.csprojResolveAssemblyReference.cache

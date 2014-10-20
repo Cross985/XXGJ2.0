@@ -1,28 +1,4 @@
-﻿//using System;
-//using System.Collections.Generic;
-//using System.Text;
-//using Sage.CRM.WebObject;
-
-//namespace CompeMarAct.DataPages {
-//    public class CompeMarActDataPage : DataPage {
-
-//        public CompeMarActDataPage()
-//            : base("CompeMarAct", "cmac_CompeMarActId", "CompeMarActNewEntry") {
-//        }
-
-//        public override void BuildContents() {
-//            try {
-
-//                /* Add your code here */
-
-//                base.BuildContents();
-//            } catch (Exception error) {
-//                this.AddError(error.Message);
-//            }
-//        }
-//    }
-//}
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 using Sage.CRM.WebObject;
@@ -61,7 +37,7 @@ namespace CompeMarAct.DataPages {
                 AddContent(vpMainPanel);
                 AddUrlButton("Edit", "Edit.gif", UrlDotNet(ThisDotNetDll, "RunDataPageEdit") + "&cmac_CompeMarActid=" + cmac_CompeMarActid);
                 AddUrlButton("Delete", "Delete.gif", UrlDotNet(ThisDotNetDll, "RunDataPageDelete") + "&cmac_CompeMarActid=" + cmac_CompeMarActid);
-                AddUrlButton("Continue", "Continue.gif", UrlDotNet(ThisDotNetDll, "RunListPage"));
+                AddUrlButton("Continue", "Continue.gif", UrlDotNet("MarketingMenu", "RunCompeMarAct") + "&J=CompeMarAct&T=MarketingManagement");
             } catch (Exception error) {
                 this.AddError(error.Message);
             }

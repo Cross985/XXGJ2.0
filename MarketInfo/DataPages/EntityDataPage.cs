@@ -54,7 +54,7 @@ namespace MarketInfo.DataPages
                     AddUrlButton("Add BrandRate", "new.gif", UrlDotNet(ThisDotNetDll, "RunBrandRateAdd") + "&maif_MarketInfoId=" + maif_MarketInfoId);
                // }
 
-                    AddUrlButton("Continue", "Continue.gif", UrlDotNet(ThisDotNetDll, "RunListPage"));
+                    AddUrlButton("Continue", "Continue.gif", UrlDotNet("MarketingMenu", "RunMarketInfo") + "&J=MarketInfo&T=CompanyManagement");
                     //AddWorkflowButtons("MarketInfo");
             }
             catch (Exception error)

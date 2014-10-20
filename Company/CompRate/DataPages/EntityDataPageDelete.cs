@@ -33,7 +33,7 @@ namespace CompRate.DataPages
                    //Record rec =  base.FindCurrentRecord("CompRate");
                    rec.DeleteRecord = true;
                    rec.SaveChanges();
-                   Dispatch.Redirect(UrlDotNet("Company", "RunDataPage") + "&comp_companyid=" + compid);
+                   Dispatch.Redirect(UrlDotNet("Company", "RunCompRateList") + "&comp_companyid=" + compid + "&J=CompRate&T=Company");
                 }
                 
                             

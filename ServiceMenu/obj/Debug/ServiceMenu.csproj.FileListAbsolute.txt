@@ -18,3 +18,8 @@ E:\孙敏\Sage CRM\欣兴工具\Project\XXGJ\ServiceMenu\obj\Debug\ResolveAssemb
 E:\孙敏\Sage CRM\欣兴工具\Project\XXGJ\ServiceMenu\obj\Debug\SalesMenu.Properties.Resources.resources
 E:\孙敏\Sage CRM\欣兴工具\Project\XXGJ\ServiceMenu\obj\Debug\ServiceMenu.csproj.GenerateResource.Cache
 E:\孙敏\Sage CRM\欣兴工具\Project\XXGJ\ServiceMenu\obj\Debug\ServiceMenu.dll
+D:\sage\欣兴工具\XXGJ2.0\ExportDLL\ServiceMenu.dll
+D:\sage\欣兴工具\XXGJ2.0\ServiceMenu\obj\Debug\ServiceMenu.csprojResolveAssemblyReference.cache
+D:\sage\欣兴工具\XXGJ2.0\ServiceMenu\obj\Debug\SalesMenu.Properties.Resources.resources
+D:\sage\欣兴工具\XXGJ2.0\ServiceMenu\obj\Debug\ServiceMenu.csproj.GenerateResource.Cache
+D:\sage\欣兴工具\XXGJ2.0\ServiceMenu\obj\Debug\ServiceMenu.dll

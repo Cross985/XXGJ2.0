@@ -11,6 +11,7 @@ namespace Company
         public FollowList()
             : base("Follow", "FollowGrid", "FollowSearchBox")
         {
+            this.UseTabs = false;
             string compid = this.FindCurrentRecord("Company").RecordId.ToString();
             this.ResultsGrid.Filter = "foll_deleted is null and foll_companyid="+compid;
         }

@@ -22,6 +22,17 @@ namespace SalesMenu {
         public static void RunOppoCompetitor(ref Web AretVal) {
             AretVal = new OppoCompetitor();
         }
-
+        public static void RunQuotation(ref Web AretVal)
+        {
+            AretVal = new Quotation();
+        }
+        public static void RunQuotationDetail(ref Web AretVal)
+        {
+            AretVal = new QuotationDetail();
+        }
+        public static void RunOppoTrack(ref Web AretVal)
+        {
+            AretVal = new OppoTrack();
+        }
     }
 }

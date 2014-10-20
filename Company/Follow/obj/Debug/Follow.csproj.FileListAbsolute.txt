@@ -8,3 +8,7 @@ E:\sage\欣兴工具\XXGJ-master\DLL\Follow.dll
 E:\sage\欣兴工具\XXGJ-master\DLL\Follow.pdb
 E:\sage\欣兴工具\XXGJ-master\Company\Follow\obj\Debug\Follow.dll
 E:\sage\欣兴工具\XXGJ-master\Company\Follow\obj\Debug\Follow.pdb
+D:\sage\欣兴工具\XXGJ2.0\DLL\Follow.dll
+D:\sage\欣兴工具\XXGJ2.0\DLL\Follow.pdb
+D:\sage\欣兴工具\XXGJ2.0\Company\Follow\obj\Debug\Follow.dll
+D:\sage\欣兴工具\XXGJ2.0\Company\Follow\obj\Debug\Follow.pdb

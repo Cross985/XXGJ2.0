@@ -44,7 +44,7 @@ namespace ProductPrice.DataPages
             //prpiRec.SetField("prpi_companyid",compid);
             //prpiRec.SaveChanges();
             //base.AfterSave(screen);
-            Dispatch.Redirect(UrlDotNet("Company", "RunProductPriceList") + "&comp_companyid=" + compid + "&J=Summary");
+            Dispatch.Redirect(UrlDotNet("Company", "RunProductPriceList") + "&comp_companyid=" + compid + "&J=ProductPrice&T=Company");
         }
     }
 }

@@ -30,7 +30,7 @@ namespace MarketingMenu
         {
             if (CurrentUser.HasRights(Sage.PermissionType.Insert, "DecorateComp") || CurrentUser.IsAdmin())
             {
-                AddUrlButton("New", "New.gif", UrlDotNet("DecorateComp", "RunDataPageNew") + "&J=DecorateComp&T=new");
+                AddUrlButton("New", "New.gif", UrlDotNet("DecorateComp", "RunDataPageNew"));
             }
         }
     }

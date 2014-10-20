@@ -32,7 +32,7 @@ namespace Company
                     {
                         IntiRec.SetField("inti_companyid",compid);
                         IntiRec.SaveChanges();
-                        Dispatch.Redirect(UrlDotNet(ThisDotNetDll, "RunInvoiceTitleList") + "&comp_companyid=" + compid + "&J=Summary&T=CompanySummary");
+                        Dispatch.Redirect(UrlDotNet(ThisDotNetDll, "RunInvoiceTitleList") + "&comp_companyid=" + compid + "&J=InvoiceTitle&T=Company");
                     }
  
                 }
@@ -47,7 +47,7 @@ namespace Company
 
                     string url = "javascript:document.EntryForm.HiddenMode.value='Save';";
                     AddSubmitButton("Save","Save.gif",url);
-                    AddUrlButton("Cancel", "cancel.gif", UrlDotNet(ThisDotNetDll, "RunInvoiceTitleList") + "&comp_companyid=" + compid + "&J=Summary&T=CompanySummary");
+                    AddUrlButton("Cancel", "cancel.gif", UrlDotNet(ThisDotNetDll, "RunInvoiceTitleList") + "&comp_companyid=" + compid + "&J=InvoiceTitle&T=Company");
                 }
 
             }

@@ -9,11 +9,13 @@ using Sage.CRM.UI;
 namespace MonthPlan.DataPages {
     public class MonthPlanDataPage : Web {
 
-        public override void PreBuildContents() {
+        public override void PreBuildContents()
+        {
             GetTabs("MonthPlan", "Summary");
             AddTopContent(GetCustomEntityTopFrame("MonthPlan"));
             base.PreBuildContents();
         }
+
         public override void BuildContents() {
             try {
                 string mopl_MonthPlanId = Dispatch.EitherField("mopl_monthplanid");
@@ -70,23 +72,25 @@ namespace MonthPlan.DataPages {
                 DealerDetailGrid.PadBottom = false;
                 vpMainPanel.Add(DealerDetailGrid);
 
-                List ProcessMethodGrid = new List("ProcessMethodGrid");
-                ProcessMethodGrid.Filter = "pmet_deleted is null and pmet_monthplanid=" + mopl_MonthPlanId;
-                ProcessMethodGrid.RowsPerScreen = 500;
-                ProcessMethodGrid.ShowNavigationButtons = true;
-                ProcessMethodGrid.PadBottom = false;
-                vpMainPanel.Add(ProcessMethodGrid);
+                //List ProcessMethodGrid = new List("ProcessMethodGrid");
+                //ProcessMethodGrid.Filter = "pmet_deleted is null and pmet_monthplanid=" + mopl_MonthPlanId;
+                //ProcessMethodGrid.RowsPerScreen = 500;
+                //ProcessMethodGrid.ShowNavigationButtons = true;
+                //ProcessMethodGrid.PadBottom = false;
+                //vpMainPanel.Add(ProcessMethodGrid);
 
 
                 AddContent(vpMainPanel);
                 AddUrlButton("Edit", "Edit.gif", UrlDotNet(ThisDotNetDll, "RunDataPageEdit") + "&mopl_MonthPlanId=" + mopl_MonthPlanId);
-                AddUrlButton("Delete", "Delete.gif", UrlDotNet(ThisDotNetDll, "RunDataPageDelete") + "&mopl_MonthPlanId=" + mopl_MonthPlanId);
+                //AddUrlButton("Delete", "Delete.gif", UrlDotNet(ThisDotNetDll, "RunDataPageDelete") + "&mopl_MonthPlanId=" + mopl_MonthPlanId);
+                //AddUrlButton("添加行业拜访计划", "new.gif", UrlDotNet(ThisDotNetDll, "RunNewIndustyPlanAdd") + "&mopl_MonthPlanId=" + mopl_MonthPlanId);
                 AddUrlButton("Add PlanDetail", "new.gif", UrlDotNet(ThisDotNetDll, "RunPlanDetailAdd") + "&mopl_MonthPlanId=" + mopl_MonthPlanId);
                 AddUrlButton("Add VisitCompony", "new.gif", UrlDotNet(ThisDotNetDll, "RunVisitComponyAdd") + "&mopl_MonthPlanId=" + mopl_MonthPlanId);
                 AddUrlButton("Add SalePlanDetail", "new.gif", UrlDotNet(ThisDotNetDll, "RunSalePlanDetailAdd") + "&mopl_MonthPlanId=" + mopl_MonthPlanId);
                 AddUrlButton("Add DealerDetail", "new.gif", UrlDotNet(ThisDotNetDll, "RunDealerDetailAdd") + "&mopl_MonthPlanId=" + mopl_MonthPlanId);
-                AddUrlButton("Add ProcessMethod", "new.gif", UrlDotNet(ThisDotNetDll, "RunProcessMethodAdd") + "&mopl_MonthPlanId=" + mopl_MonthPlanId);
-                AddUrlButton("Continue", "Continue.gif", UrlDotNet(ThisDotNetDll, "RunListPage"));
+                //AddUrlButton("Add ProcessMethod", "new.gif", UrlDotNet(ThisDotNetDll, "RunProcessMethodAdd") + "&mopl_MonthPlanId=" + mopl_MonthPlanId);
+                AddUrlButton("Continue", "Continue.gif", UrlDotNet("WorkMenu", "RunMonthPlan"));
+                AddWorkflowButtons("MonthPlan");
             } catch (Exception error) {
                 this.AddError(error.Message);
             }

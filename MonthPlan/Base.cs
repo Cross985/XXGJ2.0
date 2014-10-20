@@ -100,5 +100,9 @@ namespace MonthPlan {
         public static void RunProcessMethodDelete(ref Web AretVal) {
             AretVal = new ProcessMethodDelete();
         }
+        public static void RunNewIndustyPlanAdd(ref Web AretVal)
+        {
+            AretVal = new NewIndustyPlanAdd();
+        }
     }
 }

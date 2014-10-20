@@ -5,3 +5,7 @@ E:\孙敏\Sage CRM\欣兴工具\Project\XXGJ\ServiceAccept\obj\Debug\ServiceAcce
 E:\孙敏\Sage CRM\欣兴工具\Project\XXGJ\ServiceAccept\obj\Debug\ServiceAccept.pdb
 E:\孙敏\Sage CRM\欣兴工具\Project\XXGJ\ExportDLL\ServiceAccept.dll
 E:\孙敏\Sage CRM\欣兴工具\Project\XXGJ\ExportDLL\ServiceAccept.pdb
+D:\sage\欣兴工具\XXGJ2.0\ExportDLL\ServiceAccept.dll
+D:\sage\欣兴工具\XXGJ2.0\ExportDLL\ServiceAccept.pdb
+D:\sage\欣兴工具\XXGJ2.0\ServiceAccept\obj\Debug\ServiceAccept.dll
+D:\sage\欣兴工具\XXGJ2.0\ServiceAccept\obj\Debug\ServiceAccept.pdb

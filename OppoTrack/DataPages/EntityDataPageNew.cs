@@ -19,10 +19,12 @@ namespace OppoTrack.DataPages {
                 EntryGroup OppoTrackNewEntry = new EntryGroup("OppoTrackNewEntry");
                 //CostAdjustmentProductNewEntry.Title = "Add CostAdjustmentProduct"; 
                 Entry optr_opportunityidEntry = OppoTrackNewEntry.GetEntry("optr_opportunityid");
-                if (optr_opportunityidEntry != null) {
+                if (optr_opportunityidEntry != null && optr_opportunityid != null)
+                {
                     optr_opportunityidEntry.DefaultValue = optr_opportunityid;
                     optr_opportunityidEntry.ReadOnly = true;
                 }
+                else optr_opportunityidEntry.ReadOnly = false;
 
                 AddTabHead("OppoTrack");
                 if (hMode == "Save") {
@@ -32,11 +34,12 @@ namespace OppoTrack.DataPages {
 
                         OppoTrack.SaveChanges();
                         QuerySelect qs = this.GetQuery();
-                        qs.SQLCommand = @"Update Opportunity set oppo_nexttrackdate = (select MAX(optr_nexttrackdate) from OppoTrack where optr_deleted is null and optr_opportunityid=" + optr_opportunityid + @")
-                        ,oppo_trackdate = (select MAX(optr_date) from OppoTrack where optr_deleted is null and optr_opportunityid=" + optr_opportunityid + @" )
+                        string oppoid = OppoTrack.GetFieldAsString("optr_opportunityid");
+                        qs.SQLCommand = @"Update Opportunity set oppo_nexttrackdate = (select MAX(optr_nexttrackdate) from OppoTrack where optr_deleted is null and optr_opportunityid=" + oppoid + @")
+                        ,oppo_trackdate = (select MAX(optr_date) from OppoTrack where optr_deleted is null and optr_opportunityid=" + oppoid + @" )
                         ,oppo_targetclose = (select optr_targetclose  from OppoTrack where optr_OppoTrackId = " + OppoTrack.RecordId.ToString() + @" )
                         ,oppo_forecast = (select optr_forecast from OppoTrack where optr_OppoTrackId = " + OppoTrack.RecordId.ToString() + @") 
-                        ,oppo_certainty = (select optr_certainty  from OppoTrack where optr_OppoTrackId = " + OppoTrack.RecordId.ToString() + @") where oppo_opportunityid=" + optr_opportunityid;
+                        ,oppo_certainty = (select optr_certainty  from OppoTrack where optr_OppoTrackId = " + OppoTrack.RecordId.ToString() + @") where oppo_opportunityid=" + oppoid;
                         qs.ExecuteNonQuery();
 
                         string url = UrlDotNet(ThisDotNetDll, "RunDataPage") + "&optr_oppotrackid=" + OppoTrack.GetFieldAsString("optr_oppotrackid") + "&J=Summary";
@@ -59,7 +62,12 @@ namespace OppoTrack.DataPages {
                     vpMainPanel.Add(OppoTrackNewEntry);
                     AddContent(vpMainPanel);
                     AddSubmitButton("Save", "Save.gif", sUrl);
-                    AddUrlButton("Cancel", "cancel.gif", UrlDotNet(ThisDotNetDll, "RunListPage") + "&J=OppoTrack&T=Opportunity");
+                    string url = string.Empty;
+                    if (string.IsNullOrEmpty(optr_opportunityid))
+                        url = UrlDotNet("SalesMenu", "RunOppoTrack") + "&J=OppoTrack&T=SalesManagement";
+                    else
+                        url = UrlDotNet(ThisDotNetDll, "RunListPage") + "&J=OppoTrack&T=Opportunity";
+                    AddUrlButton("Cancel", "cancel.gif", url );
                 }
 
             } catch (Exception e) {

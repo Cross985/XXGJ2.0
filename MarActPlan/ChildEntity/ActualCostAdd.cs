@@ -22,14 +22,14 @@ namespace MarActPlan
                 string errormessage = string.Empty;
                 EntryGroup ActualCostNewEntry = new EntryGroup("ActualCostNewEntry");
                 //CostAdjustmentProductNewEntry.Title = "Add CostAdjustmentProduct"; 
-                Entry bred_busreportidEntry = ActualCostNewEntry.GetEntry("acco_maractplanid");
-                if (bred_busreportidEntry != null)
-                {
-                    bred_busreportidEntry.DefaultValue = mapl_MarActPlanId;
-                    bred_busreportidEntry.ReadOnly = true;
-                }
+                //Entry bred_busreportidEntry = ActualCostNewEntry.GetEntry("acco_maractplanid");
+                //if (bred_busreportidEntry != null)
+                //{
+                //    bred_busreportidEntry.DefaultValue = mapl_MarActPlanId;
+                //    bred_busreportidEntry.ReadOnly = true;
+                //}
 
-                AddTabHead("DecoratePerson");
+                AddTabHead("ActualCost");
                 if (hMode == "Save")
                 {
                     Record ActualCost = new Record("ActualCost");

@@ -30,7 +30,7 @@ namespace Contractmenu
         {
             if (CurrentUser.HasRights(Sage.PermissionType.Insert, "Contract") || CurrentUser.IsAdmin())
             {
-                AddUrlButton("New", "New.gif", UrlDotNet("Contract", "RunDataPageNew") + "&J=Contract&T=new");
+                AddUrlButton("New", "New.gif", UrlDotNet("Contract", "RunDataPageNew")+"&J=Contract&T=SalesManagement");
             }
         }
     }

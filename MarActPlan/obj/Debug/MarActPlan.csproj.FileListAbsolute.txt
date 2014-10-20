@@ -3,3 +3,7 @@ E:\孙敏\Sage CRM\欣兴工具\Project\XXGJ\ExportDLL\MarActPlan.pdb
 E:\孙敏\Sage CRM\欣兴工具\Project\XXGJ\MarActPlan\obj\Debug\ResolveAssemblyReference.cache
 E:\孙敏\Sage CRM\欣兴工具\Project\XXGJ\MarActPlan\obj\Debug\MarActPlan.dll
 E:\孙敏\Sage CRM\欣兴工具\Project\XXGJ\MarActPlan\obj\Debug\MarActPlan.pdb
+D:\sage\欣兴工具\XXGJ2.0\ExportDLL\MarActPlan.dll
+D:\sage\欣兴工具\XXGJ2.0\ExportDLL\MarActPlan.pdb
+D:\sage\欣兴工具\XXGJ2.0\MarActPlan\obj\Debug\MarActPlan.dll
+D:\sage\欣兴工具\XXGJ2.0\MarActPlan\obj\Debug\MarActPlan.pdb

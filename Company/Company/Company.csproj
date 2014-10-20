@@ -69,6 +69,7 @@
     <Compile Include="DataPages\EntityDataPageDelete.cs" />
     <Compile Include="DataPages\EntityDataPageEdit.cs" />
     <Compile Include="DataPages\EntityDataPageNew.cs" />
+    <Compile Include="Lists\ProcessMethodList.cs" />
     <Compile Include="Menu\EntityListPage.cs" />
     <Compile Include="DataPages\EntitySearchPage.cs" />
     <Compile Include="DataPages\OppoList.cs" />
@@ -86,6 +87,10 @@
     <Compile Include="Lists\ProductPriceList.cs" />
     <Compile Include="Lists\UseSituation.cs" />
     <Compile Include="Menu\FollowMenuList.cs" />
+    <Compile Include="ProcessMethod\ProcessMethodAdd.cs" />
+    <Compile Include="ProcessMethod\ProcessMethodDelete.cs" />
+    <Compile Include="ProcessMethod\ProcessMethodEdit.cs" />
+    <Compile Include="ProcessMethod\ProcessMethodSummary.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="US\USAdd.cs" />
     <Compile Include="US\USDelete.cs" />

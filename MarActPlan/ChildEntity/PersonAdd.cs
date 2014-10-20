@@ -21,7 +21,7 @@ namespace MarActPlan
                 int errorflag = 0;
                 string errormessage = string.Empty;
                 EntryGroup MarActPlanPerson = new EntryGroup("MarActPlanPerson");
-                //CostAdjustmentProductNewEntry.Title = "Add CostAdjustmentProduct"; 
+                MarActPlanPerson.Title = "联系人";
                 Entry bred_busreportidEntry = MarActPlanPerson.GetEntry("dper_maractplanid");
                 if (bred_busreportidEntry != null)
                 {

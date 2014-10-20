@@ -9,6 +9,7 @@ namespace Maintenance.DataPages {
     public class MaintenanceDataPageNew : DataPageNew {
         public MaintenanceDataPageNew()
             : base("Maintenance", "mate_MaintenanceId", "MaintenanceNewEntry") {
+                this.CancelButton = false;
         }
 
         public override void BuildContents() {
@@ -17,6 +18,7 @@ namespace Maintenance.DataPages {
                 /* Add your code here */
 
                 base.BuildContents();
+                AddUrlButton("Cancel", "Cancel.gif", UrlDotNet("ServiceMenu", "RunMaintenance") + "&J=Maintenance");
             } catch (Exception error) {
                 this.AddError(error.Message);
             }
