@@ -82,6 +82,7 @@
     <Compile Include="MarActPool.cs" />
     <Compile Include="MarActPlan.cs" />
     <Compile Include="CompeMarAct.cs" />
+    <Compile Include="MarActPoolHadPlan.cs" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">

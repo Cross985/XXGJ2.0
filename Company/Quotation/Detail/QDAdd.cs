@@ -29,7 +29,8 @@ namespace Quotation
                     string currname = currRec.GetFieldAsString("curr_des");
                     AddContent(HTML.InputHidden("currency", currname));
                 }
-
+                //报价单别 国内、国外
+                string inout = QutaRec.GetFieldAsString("quta_type");
                 
                 AddContent(HTML.InputHidden("exchange", exchange));
                 string hMode = Dispatch.EitherField("HiddenMode");
@@ -43,7 +44,10 @@ namespace Quotation
                 if (!string.IsNullOrEmpty(productinfoid) && productinfoid != "0")
                 {
                     Record prodRec = FindRecord("ProductInfo","pdin_ProductInfoId=" + productinfoid);
-                    string Name = prodRec.GetFieldAsString("pdin_Name");
+                    string Name = string.Empty;
+                    if (inout == "2101")
+                        Name = prodRec.GetFieldAsString("pdin_Name");
+                    else Name = prodRec.GetFieldAsString("pdin_Englishname");
                     string Standard = prodRec.GetFieldAsString("pdin_standard");
                     string pdin_marketprice = prodRec.GetFieldAsString("pdin_marketprice");
                     //国内小类
@@ -54,6 +58,10 @@ namespace Quotation
                     string pdin_prodtype2 = prodRec.GetFieldAsString("pdin_prodtype2");
                     if (string.IsNullOrEmpty(pdin_prodtype2))
                         pdin_prodtype2 = "0";
+                    //MOQ
+                    string MOQ = prodRec.GetFieldAsString("pdin_moq");
+                    if (string.IsNullOrEmpty(MOQ))
+                        MOQ = "0";
                     //客户折扣 根据报价产品所属产品小类，确认客户该小类折扣
                     string compid = QutaRec.GetFieldAsString("quta_companyid");
                     QuerySelect qs = this.GetQuery();
@@ -77,6 +85,8 @@ namespace Quotation
                             QDEntry[i].DefaultValue = discount.ToString();
                         else if (field == "qtdt_price")
                             QDEntry[i].DefaultValue = pdin_marketprice;
+                        else if (field == "qtdt_moq")
+                            QDEntry[i].DefaultValue = MOQ;
                         else
                             QDEntry[i].DefaultValue = Dispatch.ContentField(QDEntry[i].Name);
                     }

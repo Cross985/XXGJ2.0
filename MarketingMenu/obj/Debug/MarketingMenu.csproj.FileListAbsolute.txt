@@ -19,3 +19,10 @@ D:\sage\欣兴工具\XXGJ2.0\MarketingMenu\obj\Debug\MarketingMenu.Properties.Re
 D:\sage\欣兴工具\XXGJ2.0\MarketingMenu\obj\Debug\MarketingMenu.csproj.GenerateResource.Cache
 D:\sage\欣兴工具\XXGJ2.0\MarketingMenu\obj\Debug\MarketingMenu.dll
 D:\sage\欣兴工具\XXGJ2.0\MarketingMenu\obj\Debug\MarketingMenu.pdb
+E:\sage\欣兴工具\XXGJ-master\XXGJ10.10\ExportDLL\MarketingMenu.dll
+E:\sage\欣兴工具\XXGJ-master\XXGJ10.10\ExportDLL\MarketingMenu.pdb
+E:\sage\欣兴工具\XXGJ-master\XXGJ10.10\MarketingMenu\obj\Debug\MarketingMenu.csprojResolveAssemblyReference.cache
+E:\sage\欣兴工具\XXGJ-master\XXGJ10.10\MarketingMenu\obj\Debug\MarketingMenu.Properties.Resources.resources
+E:\sage\欣兴工具\XXGJ-master\XXGJ10.10\MarketingMenu\obj\Debug\MarketingMenu.csproj.GenerateResource.Cache
+E:\sage\欣兴工具\XXGJ-master\XXGJ10.10\MarketingMenu\obj\Debug\MarketingMenu.dll
+E:\sage\欣兴工具\XXGJ-master\XXGJ10.10\MarketingMenu\obj\Debug\MarketingMenu.pdb

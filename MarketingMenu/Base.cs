@@ -22,6 +22,10 @@ namespace MarketingMenu {
         public static void RunMarActPool(ref Web AretVal) {
             AretVal = new MarActPool();
         }
+        public static void RunMarActPoolPlanned(ref Web AretVal)
+        {
+            AretVal = new MarActPoolHadPlan();
+        }
         public static void RunMarActPlan(ref Web AretVal) {
             AretVal = new MarActPlan();
         }

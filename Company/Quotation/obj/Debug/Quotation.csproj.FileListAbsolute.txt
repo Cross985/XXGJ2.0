@@ -12,3 +12,7 @@ D:\sage\欣兴工具\XXGJ2.0\DLL\Quotation.dll
 D:\sage\欣兴工具\XXGJ2.0\DLL\Quotation.pdb
 D:\sage\欣兴工具\XXGJ2.0\Company\Quotation\obj\Debug\Quotation.dll
 D:\sage\欣兴工具\XXGJ2.0\Company\Quotation\obj\Debug\Quotation.pdb
+E:\sage\欣兴工具\XXGJ-master\XXGJ10.10\DLL\Quotation.dll
+E:\sage\欣兴工具\XXGJ-master\XXGJ10.10\DLL\Quotation.pdb
+E:\sage\欣兴工具\XXGJ-master\XXGJ10.10\Company\Quotation\obj\Debug\Quotation.dll
+E:\sage\欣兴工具\XXGJ-master\XXGJ10.10\Company\Quotation\obj\Debug\Quotation.pdb

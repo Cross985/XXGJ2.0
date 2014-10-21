@@ -9,13 +9,13 @@ namespace MarketingMenu
     /// <summary>
     /// 市场活动池
     /// </summary>
-    public class MarActPool :Sage.CRM.WebObject.ListPage
+    public class MarActPoolHadPlan :Sage.CRM.WebObject.ListPage
     {
-        public MarActPool()
+        public MarActPoolHadPlan()
             : base("MarActPool", "MarActPoolGrid", "MarActPoolFilterBox")
         {
             this.ResultsGrid.RowsPerScreen = 50;
-            this.ResultsGrid.Filter = "mapo_deleted is null and mapo_MarActPoolID not in (select mapl_MarActPoolid from MarActPlan where mapl_Deleted is null)";
+            this.ResultsGrid.Filter = "mapo_deleted is null and mapo_MarActPoolID in (select mapl_MarActPoolid from MarActPlan where mapl_Deleted is null)";
 
         }
 
@@ -23,7 +23,7 @@ namespace MarketingMenu
         {
             string strTopContent = "<TABLE WIDTH=100%><TR><TD CLASS=TOPHEADING WIDTH=60><IMG SRC='" + CurrentUser.VirtualImgPath() + "Icons/MarActPool.gif' BORDER=0 ALIGN=MIDDLE></td><td CLASS=VIEWBOXCAPTION><SPAN CLASS=TOPCAPTION>市场活动</SPAN></td></tr></table>";
             AddTopContent(strTopContent);
-            GetTabs("MarketingManagement", "MarActPool");            
+            GetTabs("MarketingManagement", "MarActPoolPlanned");            
         }
 
         public override void AddNewButton()
