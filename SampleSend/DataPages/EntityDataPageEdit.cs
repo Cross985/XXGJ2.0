@@ -1,0 +1,63 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using Sage.CRM.WebObject;
+using Sage.CRM.Controls;
+using Sage.CRM.Data;
+
+namespace Follow.DataPages
+{
+    public class FollowDataPageEdit : DataPageEdit
+    {
+        public FollowDataPageEdit()
+            : base("Follow", "foll_FollowID", "FollowNewEntry")
+        {
+            this.CancelButton = false;
+            
+        }
+        string compid = string.Empty;
+        public override void BuildContents()
+        {
+            try
+            {
+                GetTabs("Follow", "Follow");
+                /* Add your code here */
+                compid = Dispatch.EitherField("comp_companyid");
+                if (string.IsNullOrEmpty(compid))
+                    compid = Dispatch.EitherField("key1");
+                /* Add your code here */
+                base.BuildContents();
+
+                if(string.IsNullOrEmpty(compid))
+                    AddUrlButton("Cancel", "Cancel.gif", UrlDotNet("Company", "RunFollowMenuList") + "&J=Follow&T=CompanyMangement");
+                else
+                    AddUrlButton("Cancel", "Cancel.gif", UrlDotNet("Company", "RunFollowList") + "&comp_companyid=" + compid + "&J=Follow&T=Company");
+
+               
+            }
+            catch (Exception error)
+            {
+                this.AddError(error.Message);
+            }
+        }
+        public override void AfterSave(EntryGroup screen)
+        {
+            //Entry comp = screen.GetEntry("foll_companyid");
+            //string compid = Dispatch.EitherField("comp_companyid");
+            //if (string.IsNullOrEmpty(compid))
+            //    compid = Dispatch.EitherField("key1");
+            //comp.DefaultValue = compid;
+            Record FollRec = base.FindCurrentRecord("Follow");
+            //FollRec.SetField("foll_companyid",compid);
+            //FollRec.SaveChanges();
+            //base.AfterSave(screen);
+            string foll_createoppo = FollRec.GetFieldAsString("foll_createoppo");
+            if (string.IsNullOrEmpty(compid) && foll_createoppo.ToLower() != "y")
+                Dispatch.Redirect(UrlDotNet("Company", "RunFollowMenuList") + "&J=Follow&T=CompanyMangement");
+            else if (foll_createoppo.ToLower() == "y")
+                Dispatch.Redirect(Url("1190"));            
+            else
+                Dispatch.Redirect(UrlDotNet("Company", "RunFollowList") + "&comp_companyid=" + compid + "&J=Follow&T=Company");
+        }
+    }
+}
